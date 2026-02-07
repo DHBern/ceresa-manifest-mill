@@ -1,0 +1,132 @@
+{
+  "@context": "http://iiif.io/api/presentation/3/context.json",
+  "id": "https://iiif.arcipelago-ceresa.digitaleditions.ch/A-1-a_1-1.json",
+  "type": "Manifest",
+  "label": {
+    "en": [
+      "A-1-a_1-1"
+    ]
+  },
+  "behavior": [
+    "paged"
+  ],
+  "items": [
+    {
+      "id": "https://iiif.arcipelago-ceresa.digitaleditions.ch/canvas/p1",
+      "type": "Canvas",
+      "label": {
+        "en": [
+          "A-1-a_1-1_003.tif"
+        ]
+      },
+      "height": 6291,
+      "width": 9436,
+      "items": [
+        {
+          "id": "https://iiif.arcipelago-ceresa.digitaleditions.ch/page/p1/1",
+          "type": "AnnotationPage",
+          "items": [
+            {
+              "id": "https://iiif.arcipelago-ceresa.digitaleditions.ch/annotation/p0001-image",
+              "type": "Annotation",
+              "motivation": "painting",
+              "body": {
+                "id": "https://iiif.ub.unibe.ch/image/v3/ceresa/A-1-a_1-1_003.tif",
+                "type": "Image",
+                "format": "image/tiff",
+                "height": 6291,
+                "width": 9436,
+                "service": [
+                  {
+                    "id": "https://iiif.ub.unibe.ch/image/v3/ceresa/A-1-a_1-1_003.tif",
+                    "type": "ImageService3",
+                    "profile": "level2"
+                  }
+                ]
+              },
+              "target": "https://iiif.arcipelago-ceresa.digitaleditions.ch/canvas/p1"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "https://iiif.arcipelago-ceresa.digitaleditions.ch/canvas/p2",
+      "type": "Canvas",
+      "label": {
+        "en": [
+          "A-1-a_1-1_001.tif"
+        ]
+      },
+      "height": 6291,
+      "width": 9436,
+      "items": [
+        {
+          "id": "https://iiif.arcipelago-ceresa.digitaleditions.ch/page/p2/1",
+          "type": "AnnotationPage",
+          "items": [
+            {
+              "id": "https://iiif.arcipelago-ceresa.digitaleditions.ch/annotation/p0002-image",
+              "type": "Annotation",
+              "motivation": "painting",
+              "body": {
+                "id": "https://iiif.ub.unibe.ch/image/v3/ceresa/A-1-a_1-1_001.tif",
+                "type": "Image",
+                "format": "image/tiff",
+                "height": 6291,
+                "width": 9436,
+                "service": [
+                  {
+                    "id": "https://iiif.ub.unibe.ch/image/v3/ceresa/A-1-a_1-1_001.tif",
+                    "type": "ImageService3",
+                    "profile": "level2"
+                  }
+                ]
+              },
+              "target": "https://iiif.arcipelago-ceresa.digitaleditions.ch/canvas/p2"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "https://iiif.arcipelago-ceresa.digitaleditions.ch/canvas/p3",
+      "type": "Canvas",
+      "label": {
+        "en": [
+          "A-1-a_1-1_002.tif"
+        ]
+      },
+      "height": 6291,
+      "width": 9436,
+      "items": [
+        {
+          "id": "https://iiif.arcipelago-ceresa.digitaleditions.ch/page/p3/1",
+          "type": "AnnotationPage",
+          "items": [
+            {
+              "id": "https://iiif.arcipelago-ceresa.digitaleditions.ch/annotation/p0003-image",
+              "type": "Annotation",
+              "motivation": "painting",
+              "body": {
+                "id": "https://iiif.ub.unibe.ch/image/v3/ceresa/A-1-a_1-1_002.tif",
+                "type": "Image",
+                "format": "image/tiff",
+                "height": 6291,
+                "width": 9436,
+                "service": [
+                  {
+                    "id": "https://iiif.ub.unibe.ch/image/v3/ceresa/A-1-a_1-1_002.tif",
+                    "type": "ImageService3",
+                    "profile": "level2"
+                  }
+                ]
+              },
+              "target": "https://iiif.arcipelago-ceresa.digitaleditions.ch/canvas/p3"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
