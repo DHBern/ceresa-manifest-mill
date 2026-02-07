@@ -1,0 +1,39 @@
+name: Upload to Transkribus
+description: Submit one or more IIIF manifests for upload to Transkribus
+title: "[Transkribus Upload] "
+labels: ["iiif-upload"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ## Upload IIIF Manifests to Transkribus
+        
+        Submit IIIF Presentation manifest URLs to upload documents to a Transkribus collection.
+
+  - type: dropdown
+    id: target-collection
+    attributes:
+      label: Target Collection
+      description: Choose the Transkribus collection where documents will be uploaded
+      multiple: false
+      options:
+        - ceresa_wait (2313421)
+        - ceresa_work (2313460)
+        - ceresa_finished (2313461)
+        - ceresa_delete (2313462)
+        - iiif-test (2313464)
+      default: 0
+    validations:
+      required: true
+
+  - type: textarea
+    id: iiif-manifests
+    attributes:
+      label: IIIF Manifest URLs
+      description: List IIIF Presentation manifest URLs, one per line.
+      placeholder: |
+        https://iiif.arcipelago-ceresa.digitaleditions.ch/presentation/A-1-a_1-1.json
+        https://iiif.arcipelago-ceresa.digitaleditions.ch/presentation/A-1-a_1-2.json
+      render: text
+    validations:
+      required: true

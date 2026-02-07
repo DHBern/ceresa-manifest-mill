@@ -1,0 +1,37 @@
+name: Provide BagIt Manifests for IIIF Generation
+description: Upload a bagit manifest file to generate IIIF presentation manifests
+title: "[IIIF Generation] "
+labels: ["iiif-generation"]
+body:
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ## Upload BagIt Manifest File
+        
+        Upload a file containing the bagit manifests (e.g. `all-manifests.txt`) by dragging and dropping it into the text area below, or paste its contents directly.
+        
+        Expected format:
+        ```
+        <checksum>  <filepath>
+        ```
+        
+        Example:
+        ```
+        a978925b50f1d08c9c59449b1525b574  data/A-5/A-5-a_13/A-5-a_13_001.tif
+        9a0b5aa249422bf3484fbdbebf4b6266  data/A-2/A-2-a/A-2-a_1/A-2-a_1-1-a_001.tif
+        ```
+
+  - type: textarea
+    id: manifest-content
+    attributes:
+      label: Manifest File Content
+      description: |
+        Drag and drop your `all-manifests.txt` file here, or paste its contents.
+        
+        **Note:** GitHub will convert uploaded files to URLs (intended behaviour).
+      placeholder: |
+        Paste manifest contents or drag-and-drop the file here...
+    validations:
+      required: true
+      

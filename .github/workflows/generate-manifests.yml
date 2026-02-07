@@ -1,0 +1,191 @@
+name: Generate IIIF presentation manifests
+
+on:
+  workflow_dispatch:
+  issues:
+    types: [opened, edited]
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+  issues: write
+
+env:
+  OUTPUT_DIR: _generated/presentation
+  REPORT_FILE: _generated/manifest-generation-report.md
+  INPUT_FILE: input/all-manifests.txt
+
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    # Only run if manually triggered OR if issue has the iiif-generation label
+    if: |
+      github.event_name == 'workflow_dispatch' || 
+      contains(github.event.issue.labels.*.name, 'iiif-generation')
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install git+https://github.com/giacomomarchioro/pyIIIFpres requests
+
+      # Parse issue and extract manifest content
+      - name: Parse issue
+        if: github.event_name == 'issues'
+        uses: stefanbuck/github-issue-parser@v3
+        id: issue-parser
+        with:
+          template-path: .github/ISSUE_TEMPLATE/provide-bagit-manifests.yml
+
+      - name: Debug - show parsed issue
+        if: github.event_name == 'issues'
+        run: cat ${HOME}/issue-parser-result.json
+
+      - name: Extract manifest content from issue
+        if: github.event_name == 'issues'
+        run: |
+          mkdir -p input
+          
+          python3 << 'PYTHON_SCRIPT'
+          import json
+          import re
+          import urllib.request
+          
+          # Read parsed issue
+          with open('/home/runner/issue-parser-result.json') as f:
+              data = json.load(f)
+          
+          # Get content (handle both dash and underscore in key)
+          content = data.get('manifest-content', data.get('manifest_file_content', ''))
+          
+          print("=== Extracted content ===")
+          print(content[:500])
+          print("=========================")
+          
+          # Check if it's a markdown link with GitHub attachment
+          markdown_link = re.search(r'\[([^\]]+)\]\((https://github\.com[^\)]*user-attachments[^\)]+)\)', content)
+          
+          if markdown_link:
+              url = markdown_link.group(2)
+              print(f"Detected markdown link, downloading from: {url}")
+              urllib.request.urlretrieve(url, 'input/all-manifests.txt')
+              print("Download complete")
+          elif 'user-attachments' in content and content.startswith('http'):
+              # Bare URL
+              url = content.strip()
+              print(f"Detected bare URL, downloading from: {url}")
+              urllib.request.urlretrieve(url, 'input/all-manifests.txt')
+          else:
+              # Direct content
+              print("Using pasted content directly")
+              with open('input/all-manifests.txt', 'w') as f:
+                  f.write(content)
+          
+          # Preview
+          print("\n=== File preview ===")
+          with open('input/all-manifests.txt') as f:
+              lines = f.readlines()
+              print(f"Total lines: {len(lines)}")
+              for line in lines[:20]:
+                  print(line.rstrip())
+          PYTHON_SCRIPT
+
+      # For workflow_dispatch, use hardcoded input for testing
+      - name: Create hardcoded input for manual testing
+        if: github.event_name == 'workflow_dispatch'
+        run: |
+          mkdir -p input
+          cat > "${INPUT_FILE}" << 'EOF'
+          a978925b50f1d08c9c59449b1525b574  data/A-5/A-5-a_13/A-5-a_13_001.tif
+          9a0b5aa249422bf3484fbdbebf4b6266  data/A-2/A-2-a/A-2-a_1/A-2-a_1-1-a_001.tif
+          a0a711360efb11b3765ee2766919d90e  data/A-2/A-2-a/A-2-a_1/A-2-a_1-1-b_001-1.tif
+          dede82a323ee71a20bf84ec3f70e6437  data/A-2/A-2-a/A-2-a_1/A-2-a_1-1-b_001-2.tif
+          a3fc7ea62ba41efc9baf94a1f5b89624  data/A-2/A-2-a/A-2-a_1/A-2-a_1-1-c_001.tif
+          EOF
+
+      - name: Run manifest generator
+        env:
+          IIIF_IMAGE_BASE: "https://iiif.ub.unibe.ch/image/v3/"
+          PROJECT_SEGMENT: "ceresa"
+          IIIF_PRESENTATION_BASE: "https://iiif.arcipelago-ceresa.digitaleditions.ch"
+          OUTPUT_DIR: ${{ env.OUTPUT_DIR }}
+          REPORT_FILE: ${{ env.REPORT_FILE }}
+          INPUT_FILE: ${{ env.INPUT_FILE }}
+        run: |
+          mkdir -p "$(dirname "${REPORT_FILE}")"
+          mkdir -p "${OUTPUT_DIR}"
+          python .github/scripts/generate_manifests.py \
+            --input-file "${INPUT_FILE}" \
+            --output-dir "${OUTPUT_DIR}" \
+            --report-file "${REPORT_FILE}" \
+            --iiif-image-base "${IIIF_IMAGE_BASE}" \
+            --project-segment "${PROJECT_SEGMENT}" \
+            --iiif-presentation-base "${IIIF_PRESENTATION_BASE}"
+
+      - name: Commit generated manifests
+        uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: "chore: generate IIIF presentation manifests"
+          file_pattern: '_generated/**'
+          skip_fetch: true
+
+      # Prepare for GitHub Pages deployment
+      - name: Copy presentation folder for Pages
+        run: |
+          cp -r _generated/presentation .
+
+      - name: Generate Directory Listings
+        uses: jayanta525/github-pages-directory-listing@v4.0.0
+        with:
+          FOLDER: presentation
+
+      - name: Upload Pages Artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: .
+
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
+
+      # Post report back to the issue
+      - name: Comment report to issue
+        if: github.event_name == 'issues'
+        uses: actions/github-script@v7
+        env:
+          REPORT_FILE: ${{ env.REPORT_FILE }}
+          PAGES_URL: ${{ steps.deployment.outputs.page_url }}
+        with:
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+          script: |
+            const fs = require('fs');
+            const reportPath = process.env.REPORT_FILE;
+            const pagesUrl = process.env.PAGES_URL;
+            
+            let report = 'Report not found';
+            try {
+              report = fs.readFileSync(reportPath, 'utf8');
+            } catch (e) {
+              report = `Could not read report file: ${e}`;
+            }
+            
+            const issue_number = context.issue.number;
+            const body = `## ✅ IIIF Manifest Generation Complete\n\n${report}\n\n---\n\n🌐 **Manifests published at:** ${pagesUrl}presentation/\n\n*Workflow run: ${context.serverUrl}/${context.repo.owner}/${context.repo.repo}/actions/runs/${context.runId}*`;
+            
+            await github.rest.issues.createComment({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              issue_number,
+              body
+            });
