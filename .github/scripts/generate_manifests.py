@@ -96,6 +96,9 @@ def make_manifest_for_doc(doc, items, iiif_image_base, project_segment, iiif_pre
     """
     failures = []
     canvases_created = 0
+    
+    # Sort items to ensure proper sequential order (001, 002, 003, 004...)
+    items = sorted(items)
 
     # Ensure BASE_URL ends with / for pyIIIFpres
     if iiif_presentation_base:
@@ -109,6 +112,7 @@ def make_manifest_for_doc(doc, items, iiif_image_base, project_segment, iiif_pre
     manifest.add_label("en", doc)
     manifest.add_behavior("paged")
 
+    # Fetch all info.json files in parallel but preserve order
     jobs = {}
     with ThreadPoolExecutor(max_workers=min(MAX_WORKERS, max(2, len(items)))) as ex:
         for p in items:
@@ -119,59 +123,71 @@ def make_manifest_for_doc(doc, items, iiif_image_base, project_segment, iiif_pre
                 continue
             jobs[ex.submit(fetch_info_json, service_id, session)] = (p, service_id)
 
+        # Collect results in a dict keyed by path to preserve order
+        results = {}
         for fut in as_completed(jobs):
             p, service_id = jobs[fut]
             info = fut.result()
-            if isinstance(info, dict) and info.get('error'):
-                failures.append((p, f"info.json fetch failed for {info.get('info_url', service_id+'/info.json')}: {info.get('error')}"))
-                continue
+            results[p] = (info, service_id)
+    
+    # Now process results in the original sorted order
+    for p in items:
+        if p not in results:
+            continue  # Was skipped due to service_id build failure
+        
+        info, service_id = results[p]
+        
+        if isinstance(info, dict) and info.get('error'):
+            failures.append((p, f"info.json fetch failed for {info.get('info_url', service_id+'/info.json')}: {info.get('error')}"))
+            continue
 
-            width = safe_int(info.get('width', 0), 0)
-            height = safe_int(info.get('height', 0), 0)
+        width = safe_int(info.get('width', 0), 0)
+        height = safe_int(info.get('height', 0), 0)
 
-            try:
-                canvases_created += 1
-                canvas = manifest.add_canvas_to_items()
-                canvas.set_id(extendbase_url=f"canvas/p{canvases_created}")
-                canvas.set_width(width)
-                canvas.set_height(height)
-                canvas.add_label("en", os.path.basename(p))
+        try:
+            canvases_created += 1
+            canvas = manifest.add_canvas_to_items()
+            canvas.set_id(extendbase_url=f"canvas/p{canvases_created}")
+            canvas.set_width(width)
+            canvas.set_height(height)
+            canvas.add_label("en", os.path.basename(p))
 
-                annopage = canvas.add_annotationpage_to_items()
-                annopage.set_id(extendbase_url=f"page/p{canvases_created}/1")
-                annotation = annopage.add_annotation_to_items(target=canvas.id)
-                annotation.set_id(extendbase_url=f"annotation/p{str(canvases_created).zfill(4)}-image")
-                annotation.set_motivation("painting")
+            annopage = canvas.add_annotationpage_to_items()
+            annopage.set_id(extendbase_url=f"page/p{canvases_created}/1")
+            annotation = annopage.add_annotation_to_items(target=canvas.id)
+            annotation.set_id(extendbase_url=f"annotation/p{str(canvases_created).zfill(4)}-image")
+            annotation.set_motivation("painting")
 
-                body_id = service_id
-                annotation.body.set_id(body_id)
-                annotation.body.set_type("Image")
+            body_id = service_id
+            annotation.body.set_id(body_id)
+            annotation.body.set_type("Image")
 
-                fmt = None
-                if 'formats' in info and isinstance(info['formats'], list) and info['formats']:
+            fmt = None
+            if 'formats' in info and isinstance(info['formats'], list) and info['formats']:
+                fmt = 'image/jpeg'
+            if not fmt:
+                if p.lower().endswith(('.tif', '.tiff')):
+                    fmt = 'image/tiff'
+                else:
                     fmt = 'image/jpeg'
-                if not fmt:
-                    if p.lower().endswith(('.tif', '.tiff')):
-                        fmt = 'image/tiff'
-                    else:
-                        fmt = 'image/jpeg'
-                annotation.body.set_format(fmt)
-                annotation.body.set_width(width)
-                annotation.body.set_height(height)
+            annotation.body.set_format(fmt)
+            annotation.body.set_width(width)
+            annotation.body.set_height(height)
 
-                s = annotation.body.add_service()
-                s.set_id(service_id)
-                s.set_type("ImageService3")
-                profile = "level1"
-                if isinstance(info.get('profile'), str):
-                    profile = info.get('profile')
-                elif isinstance(info.get('profile'), list) and info.get('profile'):
-                    profile = info['profile'][0]
-                s.set_profile(profile)
+            s = annotation.body.add_service()
+            s.set_id(service_id)
+            s.set_type("ImageService3")
+            profile = "level1"
+            if isinstance(info.get('profile'), str):
+                profile = info.get('profile')
+            elif isinstance(info.get('profile'), list) and info.get('profile'):
+                profile = info['profile'][0]
+            s.set_profile(profile)
 
-            except Exception as e:
-                failures.append((p, f"manifest/canvas creation error: {e}"))
-                continue
+        except Exception as e:
+            failures.append((p, f"manifest/canvas creation error: {e}"))
+            canvases_created -= 1  # Decrement since we failed to create this canvas
+            continue
 
     try:
         manifest_json = manifest.json_dumps()
