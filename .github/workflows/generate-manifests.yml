@@ -214,6 +214,12 @@ jobs:
                       Base URL: <code><a href="https://iiif.ub.unibe.ch/image/v3/ceresa/" target="_blank" rel="noopener">https://iiif.ub.unibe.ch/image/v3/ceresa/</a></code><br/>
                       <i>(not directly accessible; add file identifier + <code>.tif/info.json</code> to get functional links)</i>
                   </p>
+                  <p>
+                      For convenience, requests to <code>https://iiif.arcipelago-ceresa.digitaleditions.ch/image/v3/ceresa/*</code> 
+                      are redirected to <code>https://iiif.ub.unibe.ch/image/v3/ceresa/*</code>.<br/>
+                      In the given hosting environment (GitHub Pages), this redirect requires JavaScript. For programmatic access or tools 
+                      without JS support, use the UB server directly: <code>https://iiif.ub.unibe.ch/image/v3/ceresa/{image-id}/info.json</code>.
+                  </p>
               </section>
               
               <section>
@@ -231,6 +237,53 @@ jobs:
                       Workflow and source code: see <a href="https://github.com/DHBern/ceresa-manifest-mill" target="_blank" rel="noopener">Ceresa Manifest Mill</a>.
                   </p>
               </footer>
+          </body>
+          </html>
+          EOF
+
+      # Create 404 redirect for Image API passthrough
+      - name: Create redirect script
+        run: |
+          mkdir -p assets
+          cat > assets/redirect.js << 'EOF'
+          (function() {
+              const path = window.location.pathname;
+              
+              // For GitHub Pages without custom domain, detect repo base path
+              // e.g., /ceresa-manifest-mill-prototype/image/v3/ceresa/...
+              const imageApiMatch = path.match(/^(\/[^\/]+)?\/image\/v3\/ceresa\/(.+)$/);
+              
+              if (imageApiMatch) {
+                  // Extract the image path (without repo base)
+                  const imagePath = imageApiMatch[2];
+                  // Redirect to UB IIIF server
+                  window.location.replace('https://iiif.ub.unibe.ch/image/v3/ceresa/' + imagePath);
+                  return;
+              }
+              
+              // Otherwise redirect to homepage (preserve base path if exists)
+              const base = path.match(/^\/[^\/]+\//)?.[0] || '/';
+              window.location.replace(base);
+          })();
+          EOF
+
+      - name: Create 404 redirect page
+        run: |
+          cat > 404.html << 'EOF'
+          <!DOCTYPE html>
+          <html lang="en">
+          <head>
+              <meta charset="UTF-8">
+              <title>Redirecting...</title>
+              <!-- This needs adjusting when using GitHub Pages without custom domain -->
+              <script src="/assets/redirect.js"></script>
+          </head>
+          <body>
+              <p>Redirecting...</p>
+              <noscript>
+                  <p>JavaScript is required. Please visit the <a href="/">homepage</a> or 
+                  <a href="https://iiif.ub.unibe.ch/image/v3/ceresa/">access the Image API directly</a>.</p>
+              </noscript>
           </body>
           </html>
           EOF
