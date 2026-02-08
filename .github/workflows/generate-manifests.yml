@@ -139,6 +139,101 @@ jobs:
           commit_message: "chore: generate IIIF presentation manifests"
           file_pattern: '_generated/**'
           skip_fetch: true
+      # Create index page
+      - name: Create index page
+        run: |
+          cat > index.html << 'EOF'
+          <!DOCTYPE html>
+          <html lang="en">
+          <head>
+              <meta charset="UTF-8">
+              <meta name="viewport" content="width=device-width, initial-scale=1.0">
+              <title>Arcipelago Ceresa: IIIF Services</title>
+              <style>
+                  * {
+                      margin: 0;
+                      padding: 0;
+                      box-sizing: border-box;
+                  }
+                  body {
+                      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+                      line-height: 1.6;
+                      color: #333;
+                      max-width: 800px;
+                      margin: 0 auto;
+                      padding: 2rem 1rem;
+                  }
+                  h1 {
+                      font-size: 2rem;
+                      margin-bottom: 2rem;
+                      color: #1a1a1a;
+                  }
+                  section {
+                      margin-bottom: 2rem;
+                  }
+                  h2 {
+                      font-size: 1.25rem;
+                      margin-bottom: 0.5rem;
+                      color: #2c5282;
+                  }
+                  p {
+                      margin-bottom: 0.5rem;
+                  }
+                  a {
+                      color: #2b6cb0;
+                      text-decoration: none;
+                  }
+                  a:hover {
+                      text-decoration: underline;
+                  }
+                  code {
+                      background: #f7fafc;
+                      padding: 0.2rem 0.4rem;
+                      border-radius: 3px;
+                      font-size: 0.9em;
+                      color: #1a202c;
+                  }
+                  footer {
+                      margin-top: 3rem;
+                      padding-top: 1rem;
+                      border-top: 1px solid #e2e8f0;
+                      font-size: 0.9rem;
+                      color: #718096;
+                  }
+              </style>
+          </head>
+          <body>
+              <h1>Arcipelago Ceresa: IIIF Services</h1>
+              
+              <section>
+                  <h2>IIIF Image API</h2>
+                  <p>
+                      Digitised images are hosted by the University Library of the University of Bern and exposed via their IIIF Image API.
+                  </p>
+                  <p>
+                      Base URL: <code><a href="https://iiif.ub.unibe.ch/image/v3/ceresa/" target="_blank" rel="noopener">https://iiif.ub.unibe.ch/image/v3/ceresa/</a></code><br/>
+                      <i>(not directly accessible; add file identifier + <code>.tif/info.json</code> to get functional links)</i>
+                  </p>
+              </section>
+              
+              <section>
+                  <h2>IIIF Presentation API</h2>
+                  <p>
+                      Project-specific IIIF Presentation manifests are available for viewing digitised documents.
+                  </p>
+                  <p>
+                      Browse manifests: <a href="/presentation/">presentation/</a>
+                  </p>
+              </section>
+              
+              <footer>
+                  <p>
+                      Workflow and source code: see <a href="https://github.com/DHBern/ceresa-manifest-mill" target="_blank" rel="noopener">Ceresa Manifest Mill</a>.
+                  </p>
+              </footer>
+          </body>
+          </html>
+          EOF
 
       # Prepare for GitHub Pages deployment
       - name: Copy presentation folder for Pages
