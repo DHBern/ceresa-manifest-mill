@@ -270,7 +270,7 @@ jobs:
         uses: stefanzweifel/git-auto-commit-action@v5
         with:
           commit_message: "chore: generate IIIF manifests + update path mapping"
-          file_pattern: '_generated/** meta/path-mapping.json'
+          file_pattern: '_generated/** meta/path-mapping.json meta/index.html'
           skip_fetch: true
 
       # -------------------------
@@ -347,6 +347,7 @@ jobs:
                     <a href="/meta/path-mapping.json">Path Mapping (JSON)</a><br/>
                     <i>Maps image filenames to their original storage paths.</i>
                     <p>The mapping can be used to resolve filenames referenced in IIIF manifests back to their source paths in the original BagIt structure.</p>
+                    <p><strong>Note:</strong> This dataset is consumed by downstream workflows for filename resolution.</p>
                   </li>
                 </ul>
               </section>
@@ -393,19 +394,14 @@ jobs:
           (function() {
           const path = window.location.pathname;
         
-          // For GitHub Pages without custom domain, detect repo base path
-          // e.g., /ceresa-manifest-mill-prototype/image/v3/ceresa/...
           const imageApiMatch = path.match(/^(\/[^\/]+)?\/image\/v3\/ceresa\/(.+)$/);
         
           if (imageApiMatch) {
-          // Extract the image path (without repo base)
           const imagePath = imageApiMatch[2];
-          // Redirect to UB IIIF server
           window.location.replace('https://iiif.ub.unibe.ch/image/v3/ceresa/' + imagePath);
           return;
           }
         
-          // Otherwise redirect to homepage (preserve base path if exists)
           const base = path.match(/^\/[^\/]+\//)?.[0] || '/';
           window.location.replace(base);
           })();
@@ -419,7 +415,6 @@ jobs:
             <head>
               <meta charset="UTF-8">
                 <title>Redirecting...</title>
-                <!-- This needs adjusting when using GitHub Pages without custom domain -->
                 <script src="/assets/redirect.js"></script>
             </head>
             <body>
@@ -488,6 +483,10 @@ jobs:
             	"",
             	"---",
             	"",
+            	"## 🗺️ Meta / Path Mapping",
+            	"- `/meta/path-mapping.json` updated (used for downstream workflows)",
+            	"- `/meta/` available as auxiliary dataset (not IIIF endpoints)",
+            	"",
             	pagesLine,
             	"",
             	`*Workflow run: ${context.serverUrl}/${context.repo.owner}/${context.repo.repo}/actions/runs/${context.runId}*`
@@ -522,4 +521,4 @@ jobs:
               repo: context.repo.repo,
               issue_number: context.issue.number,
               body
-            });            
+            });
