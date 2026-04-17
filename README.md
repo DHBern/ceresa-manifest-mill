@@ -128,7 +128,56 @@ ssh user@staging-host 'find /path-to/iiif-stage -type d -name data -prune -o -ty
 4. Upload or paste `all-manifests.txt` (file name is irrelevant, but contents not)
 5. Submit
 
-The workflow will process the manifests and commit any new or updated files to the repository.
+The workflow will process the manifests and commit any new or updated files to the repository. 
+
+The workflow also updates a shared lookup index under `meta/path-mapping.json`, which is used by downstream automation (for details see the following collapsed section).
+
+<details><summary><h5>Meta data (workflow state, <code>/meta</code>)</h5></summary>
+
+This repository maintains a small amount of persistent machine-readable state used across workflows.
+
+### Path mapping index
+
+File:
+
+```
+meta/path-mapping.json
+```
+
+### Purpose
+
+This file acts as a shared lookup table between GitHub Actions workflows.
+
+It maps image filenames to their original BagIt source paths, which are not encoded in IIIF Presentation manifests but are required for downstream processing (e.g. storing files exported from Transkribus under the original path on the WebDAV share).
+
+### Behaviour
+
+* The file is **incrementally updated (UPSERT model)** by the IIIF Manifest Generation workflow
+* Existing entries are overwritten if a new source path is provided for the same filename
+* The file is **not regenerated from scratch**
+* It is treated as a **canonical state store**
+
+### Usage
+
+Downstream workflows may read this file to resolve:
+
+```
+filename → original BagIt path
+```
+
+This is required for:
+
+* locating source images in staging environments
+* reconstructing ingestion paths
+* linking IIIF-derived identifiers back to filesystem structure
+
+### Important
+
+* This file is **not part of the IIIF API**
+* It is **not published as a public endpoint**
+* It is a **shared internal dependency between workflows**
+
+</details>
 
 #### Review results
 
