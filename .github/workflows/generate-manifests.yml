@@ -331,6 +331,25 @@ jobs:
                       Browse manifests: <a href="/presentation/">presentation/</a>
                   </p>
               </section>
+              <section>
+                <h2>Meta Information</h2>
+                <p>
+                  In addition to IIIF services, auxiliary data is available for internal and integration purposes.
+                </p>
+                <p>
+                  The <code>/meta/</code> path provides supporting resources and does not expose IIIF endpoints.
+                </p>
+                <p>
+                  Available resource:
+                </p>
+                <ul>
+                  <li>
+                    <a href="/meta/path-mapping.json">Path Mapping (JSON)</a><br/>
+                    <i>Maps image filenames to their original storage paths.</i>
+                    <p>The mapping can be used to resolve filenames referenced in IIIF manifests back to their source paths in the original BagIt structure.</p>
+                  </li>
+                </ul>
+              </section>
             
               <footer>
                 <p>
@@ -340,6 +359,29 @@ jobs:
           </body>
           </html>
           EOF
+
+      # -------------------------
+      # Create meta index
+      # -------------------------
+      - name: Create meta index
+        run: |
+          mkdir -p meta
+          cat > meta/index.html << 'EOF'
+          <!DOCTYPE html>
+          <html lang="en">
+          <head>
+            <meta charset="UTF-8">
+            <title>Meta Information</title>
+          </head>
+          <body>
+            <h1>Meta Information</h1>
+            <p>This endpoint provides auxiliary data related to IIIF manifests.</p>
+            <ul>
+              <li><a href="path-mapping.json">Path Mapping (JSON)</a></li>
+            </ul>
+          </body>
+          </html>
+          EOF    
 
       # -------------------------
       # Create 404 redirect for Image API passthrough
