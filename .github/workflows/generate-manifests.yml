@@ -26,6 +26,7 @@ jobs:
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
+
     steps:
       - name: Checkout
         uses: actions/checkout@v4
@@ -40,7 +41,9 @@ jobs:
           python -m pip install --upgrade pip
           pip install git+https://github.com/giacomomarchioro/pyIIIFpres requests
 
+      # -------------------------
       # Parse issue and extract manifest content
+      # -------------------------
       - name: Parse issue
         if: github.event_name == 'issues'
         uses: stefanbuck/github-issue-parser@v3
@@ -66,7 +69,6 @@ jobs:
           with open('/home/runner/issue-parser-result.json') as f:
               data = json.load(f)
           
-          # Get content (handle both dash and underscore in key)
           content = data.get('manifest-content', data.get('manifest_file_content', ''))
           
           print("=== Extracted content ===")
@@ -101,7 +103,9 @@ jobs:
                   print(line.rstrip())
           PYTHON_SCRIPT
 
+      # -------------------------
       # For workflow_dispatch, use hardcoded input for testing
+      # -------------------------
       - name: Create hardcoded input for manual testing
         if: github.event_name == 'workflow_dispatch'
         run: |
@@ -114,6 +118,132 @@ jobs:
           a3fc7ea62ba41efc9baf94a1f5b89624  data/A-2/A-2-a/A-2-a_1/A-2-a_1-1-c_001.tif
           EOF
 
+      # -------------------------
+      # 🚨 Validate uniqueness early
+      # -------------------------
+      - name: Validate unique filenames
+        run: |
+          python3 << 'PYTHON_SCRIPT'
+          import os
+          import sys
+
+          input_path = "input/all-manifests.txt"
+
+          seen = {}
+          duplicates = []
+
+          with open(input_path) as f:
+              for i, line in enumerate(f, 1):
+                  line = line.strip()
+                  if not line:
+                      continue
+
+                  parts = line.split(maxsplit=1)
+                  if len(parts) != 2:
+                      continue
+
+                  _, path = parts
+                  filename = os.path.basename(path)
+
+                  if filename in seen and seen[filename] != path:
+                      duplicates.append((filename, seen[filename], path, i))
+                  else:
+                      seen[filename] = path
+
+          if duplicates:
+              print("❌ Duplicate filenames detected:\n")
+              for f, old, new, line_no in duplicates[:20]:
+                  print(f"{f}")
+                  print(f"  first: {old}")
+                  print(f"  again: {new} (line {line_no})\n")
+
+              if len(duplicates) > 20:
+                  print(f"...and {len(duplicates)-20} more")
+
+              sys.exit(1)
+
+          print(f"✅ All filenames unique ({len(seen)} entries)")
+          PYTHON_SCRIPT
+
+      # -------------------------
+      # Path mapping UPSERT
+      # -------------------------
+      - name: Update path mapping index
+        run: |
+          mkdir -p meta
+          mkdir -p "$(dirname "${REPORT_FILE}")"
+
+          python3 << 'PYTHON_SCRIPT'
+          import json
+          import os
+
+          index_path = "meta/path-mapping.json"
+          input_path = "input/all-manifests.txt"
+          report_path = os.environ.get("REPORT_FILE", "_generated/manifest-generation-report.md")
+
+          if os.path.exists(index_path):
+              with open(index_path) as f:
+                  index = json.load(f)
+          else:
+              index = {}
+
+          updates = {}
+          replacements = []
+
+          with open(input_path) as f:
+              for line in f:
+                  line = line.strip()
+                  if not line:
+                      continue
+
+                  parts = line.split(maxsplit=1)
+                  if len(parts) != 2:
+                      continue
+
+                  hash_val, path = parts
+                  filename = os.path.basename(path)
+
+                  if filename in index and index[filename] != path:
+                      replacements.append({
+                          "file": filename,
+                          "old": index[filename],
+                          "new": path
+                      })
+
+                  updates[filename] = path
+
+          index.update(updates)
+
+          with open(index_path, "w") as f:
+              json.dump(index, f, indent=2, sort_keys=True)
+
+          lines = []
+          lines.append("\n## 📁 Path Mapping Updates\n")
+          lines.append(f"- Added/updated entries: **{len(updates)}**")
+
+          if replacements:
+              lines.append(f"- Replacements: **{len(replacements)}**\n")
+              lines.append("### 🔁 Overwritten mappings\n")
+
+              for r in replacements[:50]:
+                  lines.append(f"- `{r['file']}`")
+                  lines.append(f"  - old: `{r['old']}`")
+                  lines.append(f"  - new: `{r['new']}`")
+
+              if len(replacements) > 50:
+                  lines.append(f"\n_...and {len(replacements)-50} more_")
+          else:
+              lines.append("- Replacements: **0**")
+
+          with open(report_path, "a") as f:
+              f.write("\n".join(lines) + "\n")
+
+          print(f"Updated {len(updates)} entries, {len(replacements)} replacements")
+          PYTHON_SCRIPT
+
+      # -------------------------
+      # Run manifest generator
+      # -------------------------
       - name: Run manifest generator
         env:
           IIIF_IMAGE_BASE: "https://iiif.ub.unibe.ch/image/v3/"
@@ -133,13 +263,19 @@ jobs:
             --project-segment "${PROJECT_SEGMENT}" \
             --iiif-presentation-base "${IIIF_PRESENTATION_BASE}"
 
-      - name: Commit generated manifests
+      # -------------------------
+      # Commit generated content + mapping
+      # -------------------------
+      - name: Commit generated manifests + mapping
         uses: stefanzweifel/git-auto-commit-action@v5
         with:
-          commit_message: "chore: generate IIIF presentation manifests"
-          file_pattern: '_generated/**'
+          commit_message: "chore: generate IIIF manifests + update path mapping"
+          file_pattern: '_generated/** meta/path-mapping.json'
           skip_fetch: true
+
+      # -------------------------
       # Create index page
+      # -------------------------
       - name: Create index page
         run: |
           cat > index.html << 'EOF'
@@ -150,11 +286,7 @@ jobs:
               <meta name="viewport" content="width=device-width, initial-scale=1.0">
               <title>Arcipelago Ceresa: IIIF Services</title>
               <style>
-                  * {
-                      margin: 0;
-                      padding: 0;
-                      box-sizing: border-box;
-                  }
+                  * { margin: 0; padding: 0; box-sizing: border-box; }
                   body {
                       font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
                       line-height: 1.6;
@@ -163,48 +295,17 @@ jobs:
                       margin: 0 auto;
                       padding: 2rem 1rem;
                   }
-                  h1 {
-                      font-size: 2rem;
-                      margin-bottom: 2rem;
-                      color: #1a1a1a;
-                  }
-                  section {
-                      margin-bottom: 2rem;
-                  }
-                  h2 {
-                      font-size: 1.25rem;
-                      margin-bottom: 0.5rem;
-                      color: #2c5282;
-                  }
-                  p {
-                      margin-bottom: 0.5rem;
-                  }
-                  a {
-                      color: #2b6cb0;
-                      text-decoration: none;
-                  }
-                  a:hover {
-                      text-decoration: underline;
-                  }
-                  code {
-                      background: #f7fafc;
-                      padding: 0.2rem 0.4rem;
-                      border-radius: 3px;
-                      font-size: 0.9em;
-                      color: #1a202c;
-                  }
-                  footer {
-                      margin-top: 3rem;
-                      padding-top: 1rem;
-                      border-top: 1px solid #e2e8f0;
-                      font-size: 0.9rem;
-                      color: #718096;
-                  }
+                  h1 { font-size: 2rem; margin-bottom: 2rem; }
+                  section { margin-bottom: 2rem; }
+                  h2 { font-size: 1.25rem; margin-bottom: 0.5rem; color: #2c5282; }
+                  a { color: #2b6cb0; text-decoration: none; }
+                  a:hover { text-decoration: underline; }
+                  code { background: #f7fafc; padding: 0.2rem 0.4rem; border-radius: 3px; }
+                  footer { margin-top: 3rem; padding-top: 1rem; border-top: 1px solid #e2e8f0; }
               </style>
           </head>
           <body>
               <h1>Arcipelago Ceresa: IIIF Services</h1>
-              
               <section>
                   <h2>IIIF Image API</h2>
                   <p>
@@ -221,7 +322,6 @@ jobs:
                       without JS support, use the UB server directly: <code>https://iiif.ub.unibe.ch/image/v3/ceresa/{image-id}/info.json</code>.
                   </p>
               </section>
-              
               <section>
                   <h2>IIIF Presentation API</h2>
                   <p>
@@ -231,64 +331,68 @@ jobs:
                       Browse manifests: <a href="/presentation/">presentation/</a>
                   </p>
               </section>
-              
+            
               <footer>
-                  <p>
-                      Workflow and source code: see <a href="https://github.com/DHBern/ceresa-manifest-mill" target="_blank" rel="noopener">Ceresa Manifest Mill</a>.
-                  </p>
+                <p>
+                  Workflow and source code: see <a href="https://github.com/DHBern/ceresa-manifest-mill" target="_blank" rel="noopener">Ceresa Manifest Mill</a>.
+                </p>
               </footer>
           </body>
           </html>
           EOF
 
+      # -------------------------
       # Create 404 redirect for Image API passthrough
+      # -------------------------
       - name: Create redirect script
         run: |
           mkdir -p assets
           cat > assets/redirect.js << 'EOF'
           (function() {
-              const path = window.location.pathname;
-              
-              // For GitHub Pages without custom domain, detect repo base path
-              // e.g., /ceresa-manifest-mill-prototype/image/v3/ceresa/...
-              const imageApiMatch = path.match(/^(\/[^\/]+)?\/image\/v3\/ceresa\/(.+)$/);
-              
-              if (imageApiMatch) {
-                  // Extract the image path (without repo base)
-                  const imagePath = imageApiMatch[2];
-                  // Redirect to UB IIIF server
-                  window.location.replace('https://iiif.ub.unibe.ch/image/v3/ceresa/' + imagePath);
-                  return;
-              }
-              
-              // Otherwise redirect to homepage (preserve base path if exists)
-              const base = path.match(/^\/[^\/]+\//)?.[0] || '/';
-              window.location.replace(base);
+          const path = window.location.pathname;
+        
+          // For GitHub Pages without custom domain, detect repo base path
+          // e.g., /ceresa-manifest-mill-prototype/image/v3/ceresa/...
+          const imageApiMatch = path.match(/^(\/[^\/]+)?\/image\/v3\/ceresa\/(.+)$/);
+        
+          if (imageApiMatch) {
+          // Extract the image path (without repo base)
+          const imagePath = imageApiMatch[2];
+          // Redirect to UB IIIF server
+          window.location.replace('https://iiif.ub.unibe.ch/image/v3/ceresa/' + imagePath);
+          return;
+          }
+        
+          // Otherwise redirect to homepage (preserve base path if exists)
+          const base = path.match(/^\/[^\/]+\//)?.[0] || '/';
+          window.location.replace(base);
           })();
           EOF
-
+        
       - name: Create 404 redirect page
         run: |
           cat > 404.html << 'EOF'
           <!DOCTYPE html>
           <html lang="en">
-          <head>
+            <head>
               <meta charset="UTF-8">
-              <title>Redirecting...</title>
-              <!-- This needs adjusting when using GitHub Pages without custom domain -->
-              <script src="/assets/redirect.js"></script>
-          </head>
-          <body>
+                <title>Redirecting...</title>
+                <!-- This needs adjusting when using GitHub Pages without custom domain -->
+                <script src="/assets/redirect.js"></script>
+            </head>
+            <body>
               <p>Redirecting...</p>
               <noscript>
-                  <p>JavaScript is required. Please visit the <a href="/">homepage</a> or 
+                <p>JavaScript is required. Please visit the <a href="/">homepage</a> or 
                   <a href="https://iiif.ub.unibe.ch/image/v3/ceresa/">access the Image API directly</a>.</p>
               </noscript>
-          </body>
+            </body>
           </html>
           EOF
 
+      # -------------------------
       # Prepare for GitHub Pages deployment
+      # -------------------------
       - name: Copy presentation folder for Pages
         run: |
           cp -r _generated/presentation .
@@ -307,7 +411,9 @@ jobs:
         id: deployment
         uses: actions/deploy-pages@v4
 
-      # Post report back to the issue
+      # -------------------------
+      # Comment report to issue
+      # -------------------------
       - name: Comment report to issue
         if: github.event_name == 'issues'
         uses: actions/github-script@v7
@@ -318,22 +424,60 @@ jobs:
           github-token: ${{ secrets.GITHUB_TOKEN }}
           script: |
             const fs = require('fs');
+
             const reportPath = process.env.REPORT_FILE;
             const pagesUrl = process.env.PAGES_URL;
-            
-            let report = 'Report not found';
+
+            let report;
             try {
-              report = fs.readFileSync(reportPath, 'utf8');
+            	report = fs.readFileSync(reportPath, 'utf8');
             } catch (e) {
-              report = `Could not read report file: ${e}`;
+            	report = `⚠️ Could not read report file:\n\n${e}`;
             }
-            
-            const issue_number = context.issue.number;
-            const body = `## ✅ IIIF Manifest Generation Complete\n\n${report}\n\n---\n\n🌐 **Manifests published at:** ${pagesUrl}presentation/\n\n*Workflow run: ${context.serverUrl}/${context.repo.owner}/${context.repo.repo}/actions/runs/${context.runId}*`;
-            
+
+            const pagesLine = pagesUrl
+            	? `🌐 **Manifests published at:** ${pagesUrl}presentation/`
+            	: `⚠️ Pages deployment not available`;
+
+            const body = [
+            	"## ✅ IIIF Manifest Generation Complete",
+            	"",
+            	report,
+            	"",
+            	"---",
+            	"",
+            	pagesLine,
+            	"",
+            	`*Workflow run: ${context.serverUrl}/${context.repo.owner}/${context.repo.repo}/actions/runs/${context.runId}*`
+            ].join("\n");
+
+              await github.rest.issues.createComment({
+            	owner: context.repo.owner,
+            	repo: context.repo.repo,
+            	issue_number: context.issue.number,
+            	body
+            });
+
+
+
+      - name: Comment failure to issue
+        if: failure() && github.event_name == 'issues'
+        uses: actions/github-script@v7
+        with:
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+          script: |
+            const body = [
+              "## ❌ IIIF Manifest Generation Failed",
+              "",
+              "Duplicate filenames detected or another error occurred.",
+              "",
+              `Check the workflow run for details:`,
+              `${context.serverUrl}/${context.repo.owner}/${context.repo.repo}/actions/runs/${context.runId}`
+            ].join("\n");
+      
             await github.rest.issues.createComment({
               owner: context.repo.owner,
               repo: context.repo.repo,
-              issue_number,
+              issue_number: context.issue.number,
               body
-            });
+            });            
