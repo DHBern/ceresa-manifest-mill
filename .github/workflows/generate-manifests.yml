@@ -264,16 +264,6 @@ jobs:
             --iiif-presentation-base "${IIIF_PRESENTATION_BASE}"
 
       # -------------------------
-      # Commit generated content + mapping
-      # -------------------------
-      - name: Commit generated manifests + mapping
-        uses: stefanzweifel/git-auto-commit-action@v5
-        with:
-          commit_message: "chore: generate IIIF manifests + update path mapping"
-          file_pattern: '_generated/** meta/path-mapping.json meta/index.html'
-          skip_fetch: true
-
-      # -------------------------
       # Create index page
       # -------------------------
       - name: Create index page
@@ -382,8 +372,18 @@ jobs:
             </ul>
           </body>
           </html>
-          EOF    
-
+          EOF
+      
+      # -------------------------
+      # Commit generated content + mapping
+      # -------------------------
+      - name: Commit generated manifests + mapping
+        uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: "chore: generate IIIF manifests + update path mapping"
+          file_pattern: '_generated/** meta/path-mapping.json meta/index.html'
+          skip_fetch: true
+          
       # -------------------------
       # Create 404 redirect for Image API passthrough
       # -------------------------
