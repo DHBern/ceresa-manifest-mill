@@ -2,7 +2,7 @@
 
 A three-step workflow for ingesting image collections into the UB IIIF server and uploading them to Transkribus for transcription.
 
-To be extended into a four- or five-step workflow (fetch and transform from Transkribus).
+For the workflow to fetch and transform transcripts from Transkribus see [`ceresa-data`](https://github.com/DHBern/ceresa-data).
 
 ## Overview
 
