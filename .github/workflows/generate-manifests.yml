@@ -143,7 +143,7 @@ jobs:
                       continue
 
                   _, path = parts
-                  filename = os.path.basename(path)
+                  filename = os.path.name(path)
 
                   if filename in seen and seen[filename] != path:
                       duplicates.append((filename, seen[filename], path, i))
@@ -201,7 +201,7 @@ jobs:
                       continue
 
                   hash_val, path = parts
-                  filename = os.path.basename(path)
+                  filename = os.path.name(path)
 
                   if filename in index and index[filename] != path:
                       replacements.append({
@@ -248,7 +248,7 @@ jobs:
         env:
           IIIF_IMAGE_BASE: "https://iiif.ub.unibe.ch/image/v3/"
           PROJECT_SEGMENT: "ceresa"
-          IIIF_PRESENTATION_BASE: "https://iiif.arcipelago-ceresa.digitaleditions.ch"
+          IIIF_PRESENTATION_BASE: "https://iiif.arcipelago-ceresa.digitaleditions.ch/presentation"
           OUTPUT_DIR: ${{ env.OUTPUT_DIR }}
           REPORT_FILE: ${{ env.REPORT_FILE }}
           INPUT_FILE: ${{ env.INPUT_FILE }}
