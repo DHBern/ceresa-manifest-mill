@@ -121,49 +121,49 @@ jobs:
       # -------------------------
       # 🚨 Validate uniqueness early
       # -------------------------
-#      - name: Validate unique filenames
-#        run: |
-#          python3 << 'PYTHON_SCRIPT'
-#          import os
-#          import sys
-#
-#          input_path = "input/all-manifests.txt"
-#
-#          seen = {}
-#          duplicates = []
-#
-#          with open(input_path) as f:
-#              for i, line in enumerate(f, 1):
-#                  line = line.strip()
-#                  if not line:
-#                      continue
-#
-#                  parts = line.split(maxsplit=1)
-#                  if len(parts) != 2:
-#                      continue
-#
-#                  _, path = parts
-#                  filename = os.path.name(path)
-#
-#                  if filename in seen and seen[filename] != path:
-#                      duplicates.append((filename, seen[filename], path, i))
-#                  else:
-#                      seen[filename] = path
-#
-#          if duplicates:
-#              print("❌ Duplicate filenames detected:\n")
-#              for f, old, new, line_no in duplicates[:20]:
-#                  print(f"{f}")
-#                  print(f"  first: {old}")
-#                  print(f"  again: {new} (line {line_no})\n")
-#
-#              if len(duplicates) > 20:
-#                  print(f"...and {len(duplicates)-20} more")
-#
-#              sys.exit(1)
-#
-#          print(f"✅ All filenames unique ({len(seen)} entries)")
-#          PYTHON_SCRIPT
+      - name: Validate unique filenames
+        run: |
+          python3 << 'PYTHON_SCRIPT'
+          import os
+          import sys
+
+          input_path = "input/all-manifests.txt"
+
+          seen = {}
+          duplicates = []
+
+          with open(input_path) as f:
+              for i, line in enumerate(f, 1):
+                  line = line.strip()
+                  if not line:
+                      continue
+
+                  parts = line.split(maxsplit=1)
+                  if len(parts) != 2:
+                      continue
+
+                  _, path = parts
+                  filename = os.path.basename(path)
+
+                  if filename in seen and seen[filename] != path:
+                      duplicates.append((filename, seen[filename], path, i))
+                  else:
+                      seen[filename] = path
+
+          if duplicates:
+              print("❌ Duplicate filenames detected:\n")
+              for f, old, new, line_no in duplicates[:20]:
+                  print(f"{f}")
+                  print(f"  first: {old}")
+                  print(f"  again: {new} (line {line_no})\n")
+
+              if len(duplicates) > 20:
+                  print(f"...and {len(duplicates)-20} more")
+
+              sys.exit(1)
+
+          print(f"✅ All filenames unique ({len(seen)} entries)")
+          PYTHON_SCRIPT
 
       # -------------------------
       # Path mapping UPSERT
@@ -201,7 +201,7 @@ jobs:
                       continue
 
                   hash_val, path = parts
-                  filename = os.path.name(path)
+                  filename = os.path.basename(path)
 
                   if filename in index and index[filename] != path:
                       replacements.append({
