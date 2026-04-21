@@ -162,15 +162,8 @@ def make_manifest_for_doc(doc, items, iiif_image_base, project_segment, iiif_pre
             annotation.body.set_id(body_id)
             annotation.body.set_type("Image")
 
-            fmt = None
-            if 'formats' in info and isinstance(info['formats'], list) and info['formats']:
-                fmt = 'image/jpeg'
-            if not fmt:
-                if p.lower().endswith(('.tif', '.tiff')):
-                    fmt = 'image/tiff'
-                else:
-                    fmt = 'image/jpeg'
-            annotation.body.set_format(fmt)
+            fmt = 'image/jpeg'
+            annotation.body.set_format(fmt)          
             annotation.body.set_width(width)
             annotation.body.set_height(height)
 
