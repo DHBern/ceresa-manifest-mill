@@ -1,6 +1,6 @@
 {
   "@context": "http://iiif.io/api/presentation/3/context.json",
-  "id": "https://iiif.arcipelago-ceresa.digitaleditions.ch/A-1-b_5-2.json",
+  "id": "https://iiif.arcipelago-ceresa.digitaleditions.ch/presentation/A-1-b_5-2.json",
   "type": "Manifest",
   "label": {
     "en": [
@@ -12,7 +12,7 @@
   ],
   "items": [
     {
-      "id": "https://iiif.arcipelago-ceresa.digitaleditions.ch/canvas/p1",
+      "id": "https://iiif.arcipelago-ceresa.digitaleditions.ch/presentation/canvas/p1",
       "type": "Canvas",
       "label": {
         "en": [
@@ -23,11 +23,11 @@
       "width": 9436,
       "items": [
         {
-          "id": "https://iiif.arcipelago-ceresa.digitaleditions.ch/page/p1/1",
+          "id": "https://iiif.arcipelago-ceresa.digitaleditions.ch/presentation/page/p1/1",
           "type": "AnnotationPage",
           "items": [
             {
-              "id": "https://iiif.arcipelago-ceresa.digitaleditions.ch/annotation/p0001-image",
+              "id": "https://iiif.arcipelago-ceresa.digitaleditions.ch/presentation/annotation/p0001-image",
               "type": "Annotation",
               "motivation": "painting",
               "body": {
@@ -44,14 +44,14 @@
                   }
                 ]
               },
-              "target": "https://iiif.arcipelago-ceresa.digitaleditions.ch/canvas/p1"
+              "target": "https://iiif.arcipelago-ceresa.digitaleditions.ch/presentation/canvas/p1"
             }
           ]
         }
       ]
     },
     {
-      "id": "https://iiif.arcipelago-ceresa.digitaleditions.ch/canvas/p2",
+      "id": "https://iiif.arcipelago-ceresa.digitaleditions.ch/presentation/canvas/p2",
       "type": "Canvas",
       "label": {
         "en": [
@@ -62,11 +62,11 @@
       "width": 9436,
       "items": [
         {
-          "id": "https://iiif.arcipelago-ceresa.digitaleditions.ch/page/p2/1",
+          "id": "https://iiif.arcipelago-ceresa.digitaleditions.ch/presentation/page/p2/1",
           "type": "AnnotationPage",
           "items": [
             {
-              "id": "https://iiif.arcipelago-ceresa.digitaleditions.ch/annotation/p0002-image",
+              "id": "https://iiif.arcipelago-ceresa.digitaleditions.ch/presentation/annotation/p0002-image",
               "type": "Annotation",
               "motivation": "painting",
               "body": {
@@ -83,14 +83,14 @@
                   }
                 ]
               },
-              "target": "https://iiif.arcipelago-ceresa.digitaleditions.ch/canvas/p2"
+              "target": "https://iiif.arcipelago-ceresa.digitaleditions.ch/presentation/canvas/p2"
             }
           ]
         }
       ]
     },
     {
-      "id": "https://iiif.arcipelago-ceresa.digitaleditions.ch/canvas/p3",
+      "id": "https://iiif.arcipelago-ceresa.digitaleditions.ch/presentation/canvas/p3",
       "type": "Canvas",
       "label": {
         "en": [
@@ -101,11 +101,11 @@
       "width": 9436,
       "items": [
         {
-          "id": "https://iiif.arcipelago-ceresa.digitaleditions.ch/page/p3/1",
+          "id": "https://iiif.arcipelago-ceresa.digitaleditions.ch/presentation/page/p3/1",
           "type": "AnnotationPage",
           "items": [
             {
-              "id": "https://iiif.arcipelago-ceresa.digitaleditions.ch/annotation/p0003-image",
+              "id": "https://iiif.arcipelago-ceresa.digitaleditions.ch/presentation/annotation/p0003-image",
               "type": "Annotation",
               "motivation": "painting",
               "body": {
@@ -122,14 +122,14 @@
                   }
                 ]
               },
-              "target": "https://iiif.arcipelago-ceresa.digitaleditions.ch/canvas/p3"
+              "target": "https://iiif.arcipelago-ceresa.digitaleditions.ch/presentation/canvas/p3"
             }
           ]
         }
       ]
     },
     {
-      "id": "https://iiif.arcipelago-ceresa.digitaleditions.ch/canvas/p4",
+      "id": "https://iiif.arcipelago-ceresa.digitaleditions.ch/presentation/canvas/p4",
       "type": "Canvas",
       "label": {
         "en": [
@@ -140,11 +140,11 @@
       "width": 9436,
       "items": [
         {
-          "id": "https://iiif.arcipelago-ceresa.digitaleditions.ch/page/p4/1",
+          "id": "https://iiif.arcipelago-ceresa.digitaleditions.ch/presentation/page/p4/1",
           "type": "AnnotationPage",
           "items": [
             {
-              "id": "https://iiif.arcipelago-ceresa.digitaleditions.ch/annotation/p0004-image",
+              "id": "https://iiif.arcipelago-ceresa.digitaleditions.ch/presentation/annotation/p0004-image",
               "type": "Annotation",
               "motivation": "painting",
               "body": {
@@ -161,14 +161,14 @@
                   }
                 ]
               },
-              "target": "https://iiif.arcipelago-ceresa.digitaleditions.ch/canvas/p4"
+              "target": "https://iiif.arcipelago-ceresa.digitaleditions.ch/presentation/canvas/p4"
             }
           ]
         }
       ]
     },
     {
-      "id": "https://iiif.arcipelago-ceresa.digitaleditions.ch/canvas/p5",
+      "id": "https://iiif.arcipelago-ceresa.digitaleditions.ch/presentation/canvas/p5",
       "type": "Canvas",
       "label": {
         "en": [
@@ -179,11 +179,11 @@
       "width": 9436,
       "items": [
         {
-          "id": "https://iiif.arcipelago-ceresa.digitaleditions.ch/page/p5/1",
+          "id": "https://iiif.arcipelago-ceresa.digitaleditions.ch/presentation/page/p5/1",
           "type": "AnnotationPage",
           "items": [
             {
-              "id": "https://iiif.arcipelago-ceresa.digitaleditions.ch/annotation/p0005-image",
+              "id": "https://iiif.arcipelago-ceresa.digitaleditions.ch/presentation/annotation/p0005-image",
               "type": "Annotation",
               "motivation": "painting",
               "body": {
@@ -200,14 +200,14 @@
                   }
                 ]
               },
-              "target": "https://iiif.arcipelago-ceresa.digitaleditions.ch/canvas/p5"
+              "target": "https://iiif.arcipelago-ceresa.digitaleditions.ch/presentation/canvas/p5"
             }
           ]
         }
       ]
     },
     {
-      "id": "https://iiif.arcipelago-ceresa.digitaleditions.ch/canvas/p6",
+      "id": "https://iiif.arcipelago-ceresa.digitaleditions.ch/presentation/canvas/p6",
       "type": "Canvas",
       "label": {
         "en": [
@@ -218,11 +218,11 @@
       "width": 9436,
       "items": [
         {
-          "id": "https://iiif.arcipelago-ceresa.digitaleditions.ch/page/p6/1",
+          "id": "https://iiif.arcipelago-ceresa.digitaleditions.ch/presentation/page/p6/1",
           "type": "AnnotationPage",
           "items": [
             {
-              "id": "https://iiif.arcipelago-ceresa.digitaleditions.ch/annotation/p0006-image",
+              "id": "https://iiif.arcipelago-ceresa.digitaleditions.ch/presentation/annotation/p0006-image",
               "type": "Annotation",
               "motivation": "painting",
               "body": {
@@ -239,14 +239,14 @@
                   }
                 ]
               },
-              "target": "https://iiif.arcipelago-ceresa.digitaleditions.ch/canvas/p6"
+              "target": "https://iiif.arcipelago-ceresa.digitaleditions.ch/presentation/canvas/p6"
             }
           ]
         }
       ]
     },
     {
-      "id": "https://iiif.arcipelago-ceresa.digitaleditions.ch/canvas/p7",
+      "id": "https://iiif.arcipelago-ceresa.digitaleditions.ch/presentation/canvas/p7",
       "type": "Canvas",
       "label": {
         "en": [
@@ -257,11 +257,11 @@
       "width": 9436,
       "items": [
         {
-          "id": "https://iiif.arcipelago-ceresa.digitaleditions.ch/page/p7/1",
+          "id": "https://iiif.arcipelago-ceresa.digitaleditions.ch/presentation/page/p7/1",
           "type": "AnnotationPage",
           "items": [
             {
-              "id": "https://iiif.arcipelago-ceresa.digitaleditions.ch/annotation/p0007-image",
+              "id": "https://iiif.arcipelago-ceresa.digitaleditions.ch/presentation/annotation/p0007-image",
               "type": "Annotation",
               "motivation": "painting",
               "body": {
@@ -278,14 +278,14 @@
                   }
                 ]
               },
-              "target": "https://iiif.arcipelago-ceresa.digitaleditions.ch/canvas/p7"
+              "target": "https://iiif.arcipelago-ceresa.digitaleditions.ch/presentation/canvas/p7"
             }
           ]
         }
       ]
     },
     {
-      "id": "https://iiif.arcipelago-ceresa.digitaleditions.ch/canvas/p8",
+      "id": "https://iiif.arcipelago-ceresa.digitaleditions.ch/presentation/canvas/p8",
       "type": "Canvas",
       "label": {
         "en": [
@@ -296,11 +296,11 @@
       "width": 9436,
       "items": [
         {
-          "id": "https://iiif.arcipelago-ceresa.digitaleditions.ch/page/p8/1",
+          "id": "https://iiif.arcipelago-ceresa.digitaleditions.ch/presentation/page/p8/1",
           "type": "AnnotationPage",
           "items": [
             {
-              "id": "https://iiif.arcipelago-ceresa.digitaleditions.ch/annotation/p0008-image",
+              "id": "https://iiif.arcipelago-ceresa.digitaleditions.ch/presentation/annotation/p0008-image",
               "type": "Annotation",
               "motivation": "painting",
               "body": {
@@ -317,14 +317,14 @@
                   }
                 ]
               },
-              "target": "https://iiif.arcipelago-ceresa.digitaleditions.ch/canvas/p8"
+              "target": "https://iiif.arcipelago-ceresa.digitaleditions.ch/presentation/canvas/p8"
             }
           ]
         }
       ]
     },
     {
-      "id": "https://iiif.arcipelago-ceresa.digitaleditions.ch/canvas/p9",
+      "id": "https://iiif.arcipelago-ceresa.digitaleditions.ch/presentation/canvas/p9",
       "type": "Canvas",
       "label": {
         "en": [
@@ -335,11 +335,11 @@
       "width": 9436,
       "items": [
         {
-          "id": "https://iiif.arcipelago-ceresa.digitaleditions.ch/page/p9/1",
+          "id": "https://iiif.arcipelago-ceresa.digitaleditions.ch/presentation/page/p9/1",
           "type": "AnnotationPage",
           "items": [
             {
-              "id": "https://iiif.arcipelago-ceresa.digitaleditions.ch/annotation/p0009-image",
+              "id": "https://iiif.arcipelago-ceresa.digitaleditions.ch/presentation/annotation/p0009-image",
               "type": "Annotation",
               "motivation": "painting",
               "body": {
@@ -356,14 +356,14 @@
                   }
                 ]
               },
-              "target": "https://iiif.arcipelago-ceresa.digitaleditions.ch/canvas/p9"
+              "target": "https://iiif.arcipelago-ceresa.digitaleditions.ch/presentation/canvas/p9"
             }
           ]
         }
       ]
     },
     {
-      "id": "https://iiif.arcipelago-ceresa.digitaleditions.ch/canvas/p10",
+      "id": "https://iiif.arcipelago-ceresa.digitaleditions.ch/presentation/canvas/p10",
       "type": "Canvas",
       "label": {
         "en": [
@@ -374,11 +374,11 @@
       "width": 9436,
       "items": [
         {
-          "id": "https://iiif.arcipelago-ceresa.digitaleditions.ch/page/p10/1",
+          "id": "https://iiif.arcipelago-ceresa.digitaleditions.ch/presentation/page/p10/1",
           "type": "AnnotationPage",
           "items": [
             {
-              "id": "https://iiif.arcipelago-ceresa.digitaleditions.ch/annotation/p0010-image",
+              "id": "https://iiif.arcipelago-ceresa.digitaleditions.ch/presentation/annotation/p0010-image",
               "type": "Annotation",
               "motivation": "painting",
               "body": {
@@ -395,14 +395,14 @@
                   }
                 ]
               },
-              "target": "https://iiif.arcipelago-ceresa.digitaleditions.ch/canvas/p10"
+              "target": "https://iiif.arcipelago-ceresa.digitaleditions.ch/presentation/canvas/p10"
             }
           ]
         }
       ]
     },
     {
-      "id": "https://iiif.arcipelago-ceresa.digitaleditions.ch/canvas/p11",
+      "id": "https://iiif.arcipelago-ceresa.digitaleditions.ch/presentation/canvas/p11",
       "type": "Canvas",
       "label": {
         "en": [
@@ -413,11 +413,11 @@
       "width": 9436,
       "items": [
         {
-          "id": "https://iiif.arcipelago-ceresa.digitaleditions.ch/page/p11/1",
+          "id": "https://iiif.arcipelago-ceresa.digitaleditions.ch/presentation/page/p11/1",
           "type": "AnnotationPage",
           "items": [
             {
-              "id": "https://iiif.arcipelago-ceresa.digitaleditions.ch/annotation/p0011-image",
+              "id": "https://iiif.arcipelago-ceresa.digitaleditions.ch/presentation/annotation/p0011-image",
               "type": "Annotation",
               "motivation": "painting",
               "body": {
@@ -434,14 +434,14 @@
                   }
                 ]
               },
-              "target": "https://iiif.arcipelago-ceresa.digitaleditions.ch/canvas/p11"
+              "target": "https://iiif.arcipelago-ceresa.digitaleditions.ch/presentation/canvas/p11"
             }
           ]
         }
       ]
     },
     {
-      "id": "https://iiif.arcipelago-ceresa.digitaleditions.ch/canvas/p12",
+      "id": "https://iiif.arcipelago-ceresa.digitaleditions.ch/presentation/canvas/p12",
       "type": "Canvas",
       "label": {
         "en": [
@@ -452,11 +452,11 @@
       "width": 9436,
       "items": [
         {
-          "id": "https://iiif.arcipelago-ceresa.digitaleditions.ch/page/p12/1",
+          "id": "https://iiif.arcipelago-ceresa.digitaleditions.ch/presentation/page/p12/1",
           "type": "AnnotationPage",
           "items": [
             {
-              "id": "https://iiif.arcipelago-ceresa.digitaleditions.ch/annotation/p0012-image",
+              "id": "https://iiif.arcipelago-ceresa.digitaleditions.ch/presentation/annotation/p0012-image",
               "type": "Annotation",
               "motivation": "painting",
               "body": {
@@ -473,14 +473,14 @@
                   }
                 ]
               },
-              "target": "https://iiif.arcipelago-ceresa.digitaleditions.ch/canvas/p12"
+              "target": "https://iiif.arcipelago-ceresa.digitaleditions.ch/presentation/canvas/p12"
             }
           ]
         }
       ]
     },
     {
-      "id": "https://iiif.arcipelago-ceresa.digitaleditions.ch/canvas/p13",
+      "id": "https://iiif.arcipelago-ceresa.digitaleditions.ch/presentation/canvas/p13",
       "type": "Canvas",
       "label": {
         "en": [
@@ -491,11 +491,11 @@
       "width": 9436,
       "items": [
         {
-          "id": "https://iiif.arcipelago-ceresa.digitaleditions.ch/page/p13/1",
+          "id": "https://iiif.arcipelago-ceresa.digitaleditions.ch/presentation/page/p13/1",
           "type": "AnnotationPage",
           "items": [
             {
-              "id": "https://iiif.arcipelago-ceresa.digitaleditions.ch/annotation/p0013-image",
+              "id": "https://iiif.arcipelago-ceresa.digitaleditions.ch/presentation/annotation/p0013-image",
               "type": "Annotation",
               "motivation": "painting",
               "body": {
@@ -512,14 +512,14 @@
                   }
                 ]
               },
-              "target": "https://iiif.arcipelago-ceresa.digitaleditions.ch/canvas/p13"
+              "target": "https://iiif.arcipelago-ceresa.digitaleditions.ch/presentation/canvas/p13"
             }
           ]
         }
       ]
     },
     {
-      "id": "https://iiif.arcipelago-ceresa.digitaleditions.ch/canvas/p14",
+      "id": "https://iiif.arcipelago-ceresa.digitaleditions.ch/presentation/canvas/p14",
       "type": "Canvas",
       "label": {
         "en": [
@@ -530,11 +530,11 @@
       "width": 9436,
       "items": [
         {
-          "id": "https://iiif.arcipelago-ceresa.digitaleditions.ch/page/p14/1",
+          "id": "https://iiif.arcipelago-ceresa.digitaleditions.ch/presentation/page/p14/1",
           "type": "AnnotationPage",
           "items": [
             {
-              "id": "https://iiif.arcipelago-ceresa.digitaleditions.ch/annotation/p0014-image",
+              "id": "https://iiif.arcipelago-ceresa.digitaleditions.ch/presentation/annotation/p0014-image",
               "type": "Annotation",
               "motivation": "painting",
               "body": {
@@ -551,14 +551,14 @@
                   }
                 ]
               },
-              "target": "https://iiif.arcipelago-ceresa.digitaleditions.ch/canvas/p14"
+              "target": "https://iiif.arcipelago-ceresa.digitaleditions.ch/presentation/canvas/p14"
             }
           ]
         }
       ]
     },
     {
-      "id": "https://iiif.arcipelago-ceresa.digitaleditions.ch/canvas/p15",
+      "id": "https://iiif.arcipelago-ceresa.digitaleditions.ch/presentation/canvas/p15",
       "type": "Canvas",
       "label": {
         "en": [
@@ -569,11 +569,11 @@
       "width": 9436,
       "items": [
         {
-          "id": "https://iiif.arcipelago-ceresa.digitaleditions.ch/page/p15/1",
+          "id": "https://iiif.arcipelago-ceresa.digitaleditions.ch/presentation/page/p15/1",
           "type": "AnnotationPage",
           "items": [
             {
-              "id": "https://iiif.arcipelago-ceresa.digitaleditions.ch/annotation/p0015-image",
+              "id": "https://iiif.arcipelago-ceresa.digitaleditions.ch/presentation/annotation/p0015-image",
               "type": "Annotation",
               "motivation": "painting",
               "body": {
@@ -590,14 +590,14 @@
                   }
                 ]
               },
-              "target": "https://iiif.arcipelago-ceresa.digitaleditions.ch/canvas/p15"
+              "target": "https://iiif.arcipelago-ceresa.digitaleditions.ch/presentation/canvas/p15"
             }
           ]
         }
       ]
     },
     {
-      "id": "https://iiif.arcipelago-ceresa.digitaleditions.ch/canvas/p16",
+      "id": "https://iiif.arcipelago-ceresa.digitaleditions.ch/presentation/canvas/p16",
       "type": "Canvas",
       "label": {
         "en": [
@@ -608,11 +608,11 @@
       "width": 9436,
       "items": [
         {
-          "id": "https://iiif.arcipelago-ceresa.digitaleditions.ch/page/p16/1",
+          "id": "https://iiif.arcipelago-ceresa.digitaleditions.ch/presentation/page/p16/1",
           "type": "AnnotationPage",
           "items": [
             {
-              "id": "https://iiif.arcipelago-ceresa.digitaleditions.ch/annotation/p0016-image",
+              "id": "https://iiif.arcipelago-ceresa.digitaleditions.ch/presentation/annotation/p0016-image",
               "type": "Annotation",
               "motivation": "painting",
               "body": {
@@ -629,14 +629,14 @@
                   }
                 ]
               },
-              "target": "https://iiif.arcipelago-ceresa.digitaleditions.ch/canvas/p16"
+              "target": "https://iiif.arcipelago-ceresa.digitaleditions.ch/presentation/canvas/p16"
             }
           ]
         }
       ]
     },
     {
-      "id": "https://iiif.arcipelago-ceresa.digitaleditions.ch/canvas/p17",
+      "id": "https://iiif.arcipelago-ceresa.digitaleditions.ch/presentation/canvas/p17",
       "type": "Canvas",
       "label": {
         "en": [
@@ -647,11 +647,11 @@
       "width": 9436,
       "items": [
         {
-          "id": "https://iiif.arcipelago-ceresa.digitaleditions.ch/page/p17/1",
+          "id": "https://iiif.arcipelago-ceresa.digitaleditions.ch/presentation/page/p17/1",
           "type": "AnnotationPage",
           "items": [
             {
-              "id": "https://iiif.arcipelago-ceresa.digitaleditions.ch/annotation/p0017-image",
+              "id": "https://iiif.arcipelago-ceresa.digitaleditions.ch/presentation/annotation/p0017-image",
               "type": "Annotation",
               "motivation": "painting",
               "body": {
@@ -668,14 +668,14 @@
                   }
                 ]
               },
-              "target": "https://iiif.arcipelago-ceresa.digitaleditions.ch/canvas/p17"
+              "target": "https://iiif.arcipelago-ceresa.digitaleditions.ch/presentation/canvas/p17"
             }
           ]
         }
       ]
     },
     {
-      "id": "https://iiif.arcipelago-ceresa.digitaleditions.ch/canvas/p18",
+      "id": "https://iiif.arcipelago-ceresa.digitaleditions.ch/presentation/canvas/p18",
       "type": "Canvas",
       "label": {
         "en": [
@@ -686,11 +686,11 @@
       "width": 9436,
       "items": [
         {
-          "id": "https://iiif.arcipelago-ceresa.digitaleditions.ch/page/p18/1",
+          "id": "https://iiif.arcipelago-ceresa.digitaleditions.ch/presentation/page/p18/1",
           "type": "AnnotationPage",
           "items": [
             {
-              "id": "https://iiif.arcipelago-ceresa.digitaleditions.ch/annotation/p0018-image",
+              "id": "https://iiif.arcipelago-ceresa.digitaleditions.ch/presentation/annotation/p0018-image",
               "type": "Annotation",
               "motivation": "painting",
               "body": {
@@ -707,14 +707,14 @@
                   }
                 ]
               },
-              "target": "https://iiif.arcipelago-ceresa.digitaleditions.ch/canvas/p18"
+              "target": "https://iiif.arcipelago-ceresa.digitaleditions.ch/presentation/canvas/p18"
             }
           ]
         }
       ]
     },
     {
-      "id": "https://iiif.arcipelago-ceresa.digitaleditions.ch/canvas/p19",
+      "id": "https://iiif.arcipelago-ceresa.digitaleditions.ch/presentation/canvas/p19",
       "type": "Canvas",
       "label": {
         "en": [
@@ -725,11 +725,11 @@
       "width": 9436,
       "items": [
         {
-          "id": "https://iiif.arcipelago-ceresa.digitaleditions.ch/page/p19/1",
+          "id": "https://iiif.arcipelago-ceresa.digitaleditions.ch/presentation/page/p19/1",
           "type": "AnnotationPage",
           "items": [
             {
-              "id": "https://iiif.arcipelago-ceresa.digitaleditions.ch/annotation/p0019-image",
+              "id": "https://iiif.arcipelago-ceresa.digitaleditions.ch/presentation/annotation/p0019-image",
               "type": "Annotation",
               "motivation": "painting",
               "body": {
@@ -746,14 +746,14 @@
                   }
                 ]
               },
-              "target": "https://iiif.arcipelago-ceresa.digitaleditions.ch/canvas/p19"
+              "target": "https://iiif.arcipelago-ceresa.digitaleditions.ch/presentation/canvas/p19"
             }
           ]
         }
       ]
     },
     {
-      "id": "https://iiif.arcipelago-ceresa.digitaleditions.ch/canvas/p20",
+      "id": "https://iiif.arcipelago-ceresa.digitaleditions.ch/presentation/canvas/p20",
       "type": "Canvas",
       "label": {
         "en": [
@@ -764,11 +764,11 @@
       "width": 9436,
       "items": [
         {
-          "id": "https://iiif.arcipelago-ceresa.digitaleditions.ch/page/p20/1",
+          "id": "https://iiif.arcipelago-ceresa.digitaleditions.ch/presentation/page/p20/1",
           "type": "AnnotationPage",
           "items": [
             {
-              "id": "https://iiif.arcipelago-ceresa.digitaleditions.ch/annotation/p0020-image",
+              "id": "https://iiif.arcipelago-ceresa.digitaleditions.ch/presentation/annotation/p0020-image",
               "type": "Annotation",
               "motivation": "painting",
               "body": {
@@ -785,14 +785,14 @@
                   }
                 ]
               },
-              "target": "https://iiif.arcipelago-ceresa.digitaleditions.ch/canvas/p20"
+              "target": "https://iiif.arcipelago-ceresa.digitaleditions.ch/presentation/canvas/p20"
             }
           ]
         }
       ]
     },
     {
-      "id": "https://iiif.arcipelago-ceresa.digitaleditions.ch/canvas/p21",
+      "id": "https://iiif.arcipelago-ceresa.digitaleditions.ch/presentation/canvas/p21",
       "type": "Canvas",
       "label": {
         "en": [
@@ -803,11 +803,11 @@
       "width": 9436,
       "items": [
         {
-          "id": "https://iiif.arcipelago-ceresa.digitaleditions.ch/page/p21/1",
+          "id": "https://iiif.arcipelago-ceresa.digitaleditions.ch/presentation/page/p21/1",
           "type": "AnnotationPage",
           "items": [
             {
-              "id": "https://iiif.arcipelago-ceresa.digitaleditions.ch/annotation/p0021-image",
+              "id": "https://iiif.arcipelago-ceresa.digitaleditions.ch/presentation/annotation/p0021-image",
               "type": "Annotation",
               "motivation": "painting",
               "body": {
@@ -824,14 +824,14 @@
                   }
                 ]
               },
-              "target": "https://iiif.arcipelago-ceresa.digitaleditions.ch/canvas/p21"
+              "target": "https://iiif.arcipelago-ceresa.digitaleditions.ch/presentation/canvas/p21"
             }
           ]
         }
       ]
     },
     {
-      "id": "https://iiif.arcipelago-ceresa.digitaleditions.ch/canvas/p22",
+      "id": "https://iiif.arcipelago-ceresa.digitaleditions.ch/presentation/canvas/p22",
       "type": "Canvas",
       "label": {
         "en": [
@@ -842,11 +842,11 @@
       "width": 9436,
       "items": [
         {
-          "id": "https://iiif.arcipelago-ceresa.digitaleditions.ch/page/p22/1",
+          "id": "https://iiif.arcipelago-ceresa.digitaleditions.ch/presentation/page/p22/1",
           "type": "AnnotationPage",
           "items": [
             {
-              "id": "https://iiif.arcipelago-ceresa.digitaleditions.ch/annotation/p0022-image",
+              "id": "https://iiif.arcipelago-ceresa.digitaleditions.ch/presentation/annotation/p0022-image",
               "type": "Annotation",
               "motivation": "painting",
               "body": {
@@ -863,14 +863,14 @@
                   }
                 ]
               },
-              "target": "https://iiif.arcipelago-ceresa.digitaleditions.ch/canvas/p22"
+              "target": "https://iiif.arcipelago-ceresa.digitaleditions.ch/presentation/canvas/p22"
             }
           ]
         }
       ]
     },
     {
-      "id": "https://iiif.arcipelago-ceresa.digitaleditions.ch/canvas/p23",
+      "id": "https://iiif.arcipelago-ceresa.digitaleditions.ch/presentation/canvas/p23",
       "type": "Canvas",
       "label": {
         "en": [
@@ -881,11 +881,11 @@
       "width": 9436,
       "items": [
         {
-          "id": "https://iiif.arcipelago-ceresa.digitaleditions.ch/page/p23/1",
+          "id": "https://iiif.arcipelago-ceresa.digitaleditions.ch/presentation/page/p23/1",
           "type": "AnnotationPage",
           "items": [
             {
-              "id": "https://iiif.arcipelago-ceresa.digitaleditions.ch/annotation/p0023-image",
+              "id": "https://iiif.arcipelago-ceresa.digitaleditions.ch/presentation/annotation/p0023-image",
               "type": "Annotation",
               "motivation": "painting",
               "body": {
@@ -902,14 +902,14 @@
                   }
                 ]
               },
-              "target": "https://iiif.arcipelago-ceresa.digitaleditions.ch/canvas/p23"
+              "target": "https://iiif.arcipelago-ceresa.digitaleditions.ch/presentation/canvas/p23"
             }
           ]
         }
       ]
     },
     {
-      "id": "https://iiif.arcipelago-ceresa.digitaleditions.ch/canvas/p24",
+      "id": "https://iiif.arcipelago-ceresa.digitaleditions.ch/presentation/canvas/p24",
       "type": "Canvas",
       "label": {
         "en": [
@@ -920,11 +920,11 @@
       "width": 9436,
       "items": [
         {
-          "id": "https://iiif.arcipelago-ceresa.digitaleditions.ch/page/p24/1",
+          "id": "https://iiif.arcipelago-ceresa.digitaleditions.ch/presentation/page/p24/1",
           "type": "AnnotationPage",
           "items": [
             {
-              "id": "https://iiif.arcipelago-ceresa.digitaleditions.ch/annotation/p0024-image",
+              "id": "https://iiif.arcipelago-ceresa.digitaleditions.ch/presentation/annotation/p0024-image",
               "type": "Annotation",
               "motivation": "painting",
               "body": {
@@ -941,14 +941,14 @@
                   }
                 ]
               },
-              "target": "https://iiif.arcipelago-ceresa.digitaleditions.ch/canvas/p24"
+              "target": "https://iiif.arcipelago-ceresa.digitaleditions.ch/presentation/canvas/p24"
             }
           ]
         }
       ]
     },
     {
-      "id": "https://iiif.arcipelago-ceresa.digitaleditions.ch/canvas/p25",
+      "id": "https://iiif.arcipelago-ceresa.digitaleditions.ch/presentation/canvas/p25",
       "type": "Canvas",
       "label": {
         "en": [
@@ -959,11 +959,11 @@
       "width": 9436,
       "items": [
         {
-          "id": "https://iiif.arcipelago-ceresa.digitaleditions.ch/page/p25/1",
+          "id": "https://iiif.arcipelago-ceresa.digitaleditions.ch/presentation/page/p25/1",
           "type": "AnnotationPage",
           "items": [
             {
-              "id": "https://iiif.arcipelago-ceresa.digitaleditions.ch/annotation/p0025-image",
+              "id": "https://iiif.arcipelago-ceresa.digitaleditions.ch/presentation/annotation/p0025-image",
               "type": "Annotation",
               "motivation": "painting",
               "body": {
@@ -980,14 +980,14 @@
                   }
                 ]
               },
-              "target": "https://iiif.arcipelago-ceresa.digitaleditions.ch/canvas/p25"
+              "target": "https://iiif.arcipelago-ceresa.digitaleditions.ch/presentation/canvas/p25"
             }
           ]
         }
       ]
     },
     {
-      "id": "https://iiif.arcipelago-ceresa.digitaleditions.ch/canvas/p26",
+      "id": "https://iiif.arcipelago-ceresa.digitaleditions.ch/presentation/canvas/p26",
       "type": "Canvas",
       "label": {
         "en": [
@@ -998,11 +998,11 @@
       "width": 9436,
       "items": [
         {
-          "id": "https://iiif.arcipelago-ceresa.digitaleditions.ch/page/p26/1",
+          "id": "https://iiif.arcipelago-ceresa.digitaleditions.ch/presentation/page/p26/1",
           "type": "AnnotationPage",
           "items": [
             {
-              "id": "https://iiif.arcipelago-ceresa.digitaleditions.ch/annotation/p0026-image",
+              "id": "https://iiif.arcipelago-ceresa.digitaleditions.ch/presentation/annotation/p0026-image",
               "type": "Annotation",
               "motivation": "painting",
               "body": {
@@ -1019,14 +1019,14 @@
                   }
                 ]
               },
-              "target": "https://iiif.arcipelago-ceresa.digitaleditions.ch/canvas/p26"
+              "target": "https://iiif.arcipelago-ceresa.digitaleditions.ch/presentation/canvas/p26"
             }
           ]
         }
       ]
     },
     {
-      "id": "https://iiif.arcipelago-ceresa.digitaleditions.ch/canvas/p27",
+      "id": "https://iiif.arcipelago-ceresa.digitaleditions.ch/presentation/canvas/p27",
       "type": "Canvas",
       "label": {
         "en": [
@@ -1037,11 +1037,11 @@
       "width": 9436,
       "items": [
         {
-          "id": "https://iiif.arcipelago-ceresa.digitaleditions.ch/page/p27/1",
+          "id": "https://iiif.arcipelago-ceresa.digitaleditions.ch/presentation/page/p27/1",
           "type": "AnnotationPage",
           "items": [
             {
-              "id": "https://iiif.arcipelago-ceresa.digitaleditions.ch/annotation/p0027-image",
+              "id": "https://iiif.arcipelago-ceresa.digitaleditions.ch/presentation/annotation/p0027-image",
               "type": "Annotation",
               "motivation": "painting",
               "body": {
@@ -1058,14 +1058,14 @@
                   }
                 ]
               },
-              "target": "https://iiif.arcipelago-ceresa.digitaleditions.ch/canvas/p27"
+              "target": "https://iiif.arcipelago-ceresa.digitaleditions.ch/presentation/canvas/p27"
             }
           ]
         }
       ]
     },
     {
-      "id": "https://iiif.arcipelago-ceresa.digitaleditions.ch/canvas/p28",
+      "id": "https://iiif.arcipelago-ceresa.digitaleditions.ch/presentation/canvas/p28",
       "type": "Canvas",
       "label": {
         "en": [
@@ -1076,11 +1076,11 @@
       "width": 9436,
       "items": [
         {
-          "id": "https://iiif.arcipelago-ceresa.digitaleditions.ch/page/p28/1",
+          "id": "https://iiif.arcipelago-ceresa.digitaleditions.ch/presentation/page/p28/1",
           "type": "AnnotationPage",
           "items": [
             {
-              "id": "https://iiif.arcipelago-ceresa.digitaleditions.ch/annotation/p0028-image",
+              "id": "https://iiif.arcipelago-ceresa.digitaleditions.ch/presentation/annotation/p0028-image",
               "type": "Annotation",
               "motivation": "painting",
               "body": {
@@ -1097,14 +1097,14 @@
                   }
                 ]
               },
-              "target": "https://iiif.arcipelago-ceresa.digitaleditions.ch/canvas/p28"
+              "target": "https://iiif.arcipelago-ceresa.digitaleditions.ch/presentation/canvas/p28"
             }
           ]
         }
       ]
     },
     {
-      "id": "https://iiif.arcipelago-ceresa.digitaleditions.ch/canvas/p29",
+      "id": "https://iiif.arcipelago-ceresa.digitaleditions.ch/presentation/canvas/p29",
       "type": "Canvas",
       "label": {
         "en": [
@@ -1115,11 +1115,11 @@
       "width": 9436,
       "items": [
         {
-          "id": "https://iiif.arcipelago-ceresa.digitaleditions.ch/page/p29/1",
+          "id": "https://iiif.arcipelago-ceresa.digitaleditions.ch/presentation/page/p29/1",
           "type": "AnnotationPage",
           "items": [
             {
-              "id": "https://iiif.arcipelago-ceresa.digitaleditions.ch/annotation/p0029-image",
+              "id": "https://iiif.arcipelago-ceresa.digitaleditions.ch/presentation/annotation/p0029-image",
               "type": "Annotation",
               "motivation": "painting",
               "body": {
@@ -1136,14 +1136,14 @@
                   }
                 ]
               },
-              "target": "https://iiif.arcipelago-ceresa.digitaleditions.ch/canvas/p29"
+              "target": "https://iiif.arcipelago-ceresa.digitaleditions.ch/presentation/canvas/p29"
             }
           ]
         }
       ]
     },
     {
-      "id": "https://iiif.arcipelago-ceresa.digitaleditions.ch/canvas/p30",
+      "id": "https://iiif.arcipelago-ceresa.digitaleditions.ch/presentation/canvas/p30",
       "type": "Canvas",
       "label": {
         "en": [
@@ -1154,11 +1154,11 @@
       "width": 9436,
       "items": [
         {
-          "id": "https://iiif.arcipelago-ceresa.digitaleditions.ch/page/p30/1",
+          "id": "https://iiif.arcipelago-ceresa.digitaleditions.ch/presentation/page/p30/1",
           "type": "AnnotationPage",
           "items": [
             {
-              "id": "https://iiif.arcipelago-ceresa.digitaleditions.ch/annotation/p0030-image",
+              "id": "https://iiif.arcipelago-ceresa.digitaleditions.ch/presentation/annotation/p0030-image",
               "type": "Annotation",
               "motivation": "painting",
               "body": {
@@ -1175,14 +1175,14 @@
                   }
                 ]
               },
-              "target": "https://iiif.arcipelago-ceresa.digitaleditions.ch/canvas/p30"
+              "target": "https://iiif.arcipelago-ceresa.digitaleditions.ch/presentation/canvas/p30"
             }
           ]
         }
       ]
     },
     {
-      "id": "https://iiif.arcipelago-ceresa.digitaleditions.ch/canvas/p31",
+      "id": "https://iiif.arcipelago-ceresa.digitaleditions.ch/presentation/canvas/p31",
       "type": "Canvas",
       "label": {
         "en": [
@@ -1193,11 +1193,11 @@
       "width": 9436,
       "items": [
         {
-          "id": "https://iiif.arcipelago-ceresa.digitaleditions.ch/page/p31/1",
+          "id": "https://iiif.arcipelago-ceresa.digitaleditions.ch/presentation/page/p31/1",
           "type": "AnnotationPage",
           "items": [
             {
-              "id": "https://iiif.arcipelago-ceresa.digitaleditions.ch/annotation/p0031-image",
+              "id": "https://iiif.arcipelago-ceresa.digitaleditions.ch/presentation/annotation/p0031-image",
               "type": "Annotation",
               "motivation": "painting",
               "body": {
@@ -1214,14 +1214,14 @@
                   }
                 ]
               },
-              "target": "https://iiif.arcipelago-ceresa.digitaleditions.ch/canvas/p31"
+              "target": "https://iiif.arcipelago-ceresa.digitaleditions.ch/presentation/canvas/p31"
             }
           ]
         }
       ]
     },
     {
-      "id": "https://iiif.arcipelago-ceresa.digitaleditions.ch/canvas/p32",
+      "id": "https://iiif.arcipelago-ceresa.digitaleditions.ch/presentation/canvas/p32",
       "type": "Canvas",
       "label": {
         "en": [
@@ -1232,11 +1232,11 @@
       "width": 9436,
       "items": [
         {
-          "id": "https://iiif.arcipelago-ceresa.digitaleditions.ch/page/p32/1",
+          "id": "https://iiif.arcipelago-ceresa.digitaleditions.ch/presentation/page/p32/1",
           "type": "AnnotationPage",
           "items": [
             {
-              "id": "https://iiif.arcipelago-ceresa.digitaleditions.ch/annotation/p0032-image",
+              "id": "https://iiif.arcipelago-ceresa.digitaleditions.ch/presentation/annotation/p0032-image",
               "type": "Annotation",
               "motivation": "painting",
               "body": {
@@ -1253,14 +1253,14 @@
                   }
                 ]
               },
-              "target": "https://iiif.arcipelago-ceresa.digitaleditions.ch/canvas/p32"
+              "target": "https://iiif.arcipelago-ceresa.digitaleditions.ch/presentation/canvas/p32"
             }
           ]
         }
       ]
     },
     {
-      "id": "https://iiif.arcipelago-ceresa.digitaleditions.ch/canvas/p33",
+      "id": "https://iiif.arcipelago-ceresa.digitaleditions.ch/presentation/canvas/p33",
       "type": "Canvas",
       "label": {
         "en": [
@@ -1271,11 +1271,11 @@
       "width": 9436,
       "items": [
         {
-          "id": "https://iiif.arcipelago-ceresa.digitaleditions.ch/page/p33/1",
+          "id": "https://iiif.arcipelago-ceresa.digitaleditions.ch/presentation/page/p33/1",
           "type": "AnnotationPage",
           "items": [
             {
-              "id": "https://iiif.arcipelago-ceresa.digitaleditions.ch/annotation/p0033-image",
+              "id": "https://iiif.arcipelago-ceresa.digitaleditions.ch/presentation/annotation/p0033-image",
               "type": "Annotation",
               "motivation": "painting",
               "body": {
@@ -1292,14 +1292,14 @@
                   }
                 ]
               },
-              "target": "https://iiif.arcipelago-ceresa.digitaleditions.ch/canvas/p33"
+              "target": "https://iiif.arcipelago-ceresa.digitaleditions.ch/presentation/canvas/p33"
             }
           ]
         }
       ]
     },
     {
-      "id": "https://iiif.arcipelago-ceresa.digitaleditions.ch/canvas/p34",
+      "id": "https://iiif.arcipelago-ceresa.digitaleditions.ch/presentation/canvas/p34",
       "type": "Canvas",
       "label": {
         "en": [
@@ -1310,11 +1310,11 @@
       "width": 9436,
       "items": [
         {
-          "id": "https://iiif.arcipelago-ceresa.digitaleditions.ch/page/p34/1",
+          "id": "https://iiif.arcipelago-ceresa.digitaleditions.ch/presentation/page/p34/1",
           "type": "AnnotationPage",
           "items": [
             {
-              "id": "https://iiif.arcipelago-ceresa.digitaleditions.ch/annotation/p0034-image",
+              "id": "https://iiif.arcipelago-ceresa.digitaleditions.ch/presentation/annotation/p0034-image",
               "type": "Annotation",
               "motivation": "painting",
               "body": {
@@ -1331,14 +1331,14 @@
                   }
                 ]
               },
-              "target": "https://iiif.arcipelago-ceresa.digitaleditions.ch/canvas/p34"
+              "target": "https://iiif.arcipelago-ceresa.digitaleditions.ch/presentation/canvas/p34"
             }
           ]
         }
       ]
     },
     {
-      "id": "https://iiif.arcipelago-ceresa.digitaleditions.ch/canvas/p35",
+      "id": "https://iiif.arcipelago-ceresa.digitaleditions.ch/presentation/canvas/p35",
       "type": "Canvas",
       "label": {
         "en": [
@@ -1349,11 +1349,11 @@
       "width": 9436,
       "items": [
         {
-          "id": "https://iiif.arcipelago-ceresa.digitaleditions.ch/page/p35/1",
+          "id": "https://iiif.arcipelago-ceresa.digitaleditions.ch/presentation/page/p35/1",
           "type": "AnnotationPage",
           "items": [
             {
-              "id": "https://iiif.arcipelago-ceresa.digitaleditions.ch/annotation/p0035-image",
+              "id": "https://iiif.arcipelago-ceresa.digitaleditions.ch/presentation/annotation/p0035-image",
               "type": "Annotation",
               "motivation": "painting",
               "body": {
@@ -1370,14 +1370,14 @@
                   }
                 ]
               },
-              "target": "https://iiif.arcipelago-ceresa.digitaleditions.ch/canvas/p35"
+              "target": "https://iiif.arcipelago-ceresa.digitaleditions.ch/presentation/canvas/p35"
             }
           ]
         }
       ]
     },
     {
-      "id": "https://iiif.arcipelago-ceresa.digitaleditions.ch/canvas/p36",
+      "id": "https://iiif.arcipelago-ceresa.digitaleditions.ch/presentation/canvas/p36",
       "type": "Canvas",
       "label": {
         "en": [
@@ -1388,11 +1388,11 @@
       "width": 9436,
       "items": [
         {
-          "id": "https://iiif.arcipelago-ceresa.digitaleditions.ch/page/p36/1",
+          "id": "https://iiif.arcipelago-ceresa.digitaleditions.ch/presentation/page/p36/1",
           "type": "AnnotationPage",
           "items": [
             {
-              "id": "https://iiif.arcipelago-ceresa.digitaleditions.ch/annotation/p0036-image",
+              "id": "https://iiif.arcipelago-ceresa.digitaleditions.ch/presentation/annotation/p0036-image",
               "type": "Annotation",
               "motivation": "painting",
               "body": {
@@ -1409,14 +1409,14 @@
                   }
                 ]
               },
-              "target": "https://iiif.arcipelago-ceresa.digitaleditions.ch/canvas/p36"
+              "target": "https://iiif.arcipelago-ceresa.digitaleditions.ch/presentation/canvas/p36"
             }
           ]
         }
       ]
     },
     {
-      "id": "https://iiif.arcipelago-ceresa.digitaleditions.ch/canvas/p37",
+      "id": "https://iiif.arcipelago-ceresa.digitaleditions.ch/presentation/canvas/p37",
       "type": "Canvas",
       "label": {
         "en": [
@@ -1427,11 +1427,11 @@
       "width": 9436,
       "items": [
         {
-          "id": "https://iiif.arcipelago-ceresa.digitaleditions.ch/page/p37/1",
+          "id": "https://iiif.arcipelago-ceresa.digitaleditions.ch/presentation/page/p37/1",
           "type": "AnnotationPage",
           "items": [
             {
-              "id": "https://iiif.arcipelago-ceresa.digitaleditions.ch/annotation/p0037-image",
+              "id": "https://iiif.arcipelago-ceresa.digitaleditions.ch/presentation/annotation/p0037-image",
               "type": "Annotation",
               "motivation": "painting",
               "body": {
@@ -1448,14 +1448,14 @@
                   }
                 ]
               },
-              "target": "https://iiif.arcipelago-ceresa.digitaleditions.ch/canvas/p37"
+              "target": "https://iiif.arcipelago-ceresa.digitaleditions.ch/presentation/canvas/p37"
             }
           ]
         }
       ]
     },
     {
-      "id": "https://iiif.arcipelago-ceresa.digitaleditions.ch/canvas/p38",
+      "id": "https://iiif.arcipelago-ceresa.digitaleditions.ch/presentation/canvas/p38",
       "type": "Canvas",
       "label": {
         "en": [
@@ -1466,11 +1466,11 @@
       "width": 9436,
       "items": [
         {
-          "id": "https://iiif.arcipelago-ceresa.digitaleditions.ch/page/p38/1",
+          "id": "https://iiif.arcipelago-ceresa.digitaleditions.ch/presentation/page/p38/1",
           "type": "AnnotationPage",
           "items": [
             {
-              "id": "https://iiif.arcipelago-ceresa.digitaleditions.ch/annotation/p0038-image",
+              "id": "https://iiif.arcipelago-ceresa.digitaleditions.ch/presentation/annotation/p0038-image",
               "type": "Annotation",
               "motivation": "painting",
               "body": {
@@ -1487,14 +1487,14 @@
                   }
                 ]
               },
-              "target": "https://iiif.arcipelago-ceresa.digitaleditions.ch/canvas/p38"
+              "target": "https://iiif.arcipelago-ceresa.digitaleditions.ch/presentation/canvas/p38"
             }
           ]
         }
       ]
     },
     {
-      "id": "https://iiif.arcipelago-ceresa.digitaleditions.ch/canvas/p39",
+      "id": "https://iiif.arcipelago-ceresa.digitaleditions.ch/presentation/canvas/p39",
       "type": "Canvas",
       "label": {
         "en": [
@@ -1505,11 +1505,11 @@
       "width": 9436,
       "items": [
         {
-          "id": "https://iiif.arcipelago-ceresa.digitaleditions.ch/page/p39/1",
+          "id": "https://iiif.arcipelago-ceresa.digitaleditions.ch/presentation/page/p39/1",
           "type": "AnnotationPage",
           "items": [
             {
-              "id": "https://iiif.arcipelago-ceresa.digitaleditions.ch/annotation/p0039-image",
+              "id": "https://iiif.arcipelago-ceresa.digitaleditions.ch/presentation/annotation/p0039-image",
               "type": "Annotation",
               "motivation": "painting",
               "body": {
@@ -1526,14 +1526,14 @@
                   }
                 ]
               },
-              "target": "https://iiif.arcipelago-ceresa.digitaleditions.ch/canvas/p39"
+              "target": "https://iiif.arcipelago-ceresa.digitaleditions.ch/presentation/canvas/p39"
             }
           ]
         }
       ]
     },
     {
-      "id": "https://iiif.arcipelago-ceresa.digitaleditions.ch/canvas/p40",
+      "id": "https://iiif.arcipelago-ceresa.digitaleditions.ch/presentation/canvas/p40",
       "type": "Canvas",
       "label": {
         "en": [
@@ -1544,11 +1544,11 @@
       "width": 9436,
       "items": [
         {
-          "id": "https://iiif.arcipelago-ceresa.digitaleditions.ch/page/p40/1",
+          "id": "https://iiif.arcipelago-ceresa.digitaleditions.ch/presentation/page/p40/1",
           "type": "AnnotationPage",
           "items": [
             {
-              "id": "https://iiif.arcipelago-ceresa.digitaleditions.ch/annotation/p0040-image",
+              "id": "https://iiif.arcipelago-ceresa.digitaleditions.ch/presentation/annotation/p0040-image",
               "type": "Annotation",
               "motivation": "painting",
               "body": {
@@ -1565,14 +1565,14 @@
                   }
                 ]
               },
-              "target": "https://iiif.arcipelago-ceresa.digitaleditions.ch/canvas/p40"
+              "target": "https://iiif.arcipelago-ceresa.digitaleditions.ch/presentation/canvas/p40"
             }
           ]
         }
       ]
     },
     {
-      "id": "https://iiif.arcipelago-ceresa.digitaleditions.ch/canvas/p41",
+      "id": "https://iiif.arcipelago-ceresa.digitaleditions.ch/presentation/canvas/p41",
       "type": "Canvas",
       "label": {
         "en": [
@@ -1583,11 +1583,11 @@
       "width": 9436,
       "items": [
         {
-          "id": "https://iiif.arcipelago-ceresa.digitaleditions.ch/page/p41/1",
+          "id": "https://iiif.arcipelago-ceresa.digitaleditions.ch/presentation/page/p41/1",
           "type": "AnnotationPage",
           "items": [
             {
-              "id": "https://iiif.arcipelago-ceresa.digitaleditions.ch/annotation/p0041-image",
+              "id": "https://iiif.arcipelago-ceresa.digitaleditions.ch/presentation/annotation/p0041-image",
               "type": "Annotation",
               "motivation": "painting",
               "body": {
@@ -1604,14 +1604,14 @@
                   }
                 ]
               },
-              "target": "https://iiif.arcipelago-ceresa.digitaleditions.ch/canvas/p41"
+              "target": "https://iiif.arcipelago-ceresa.digitaleditions.ch/presentation/canvas/p41"
             }
           ]
         }
       ]
     },
     {
-      "id": "https://iiif.arcipelago-ceresa.digitaleditions.ch/canvas/p42",
+      "id": "https://iiif.arcipelago-ceresa.digitaleditions.ch/presentation/canvas/p42",
       "type": "Canvas",
       "label": {
         "en": [
@@ -1622,11 +1622,11 @@
       "width": 9436,
       "items": [
         {
-          "id": "https://iiif.arcipelago-ceresa.digitaleditions.ch/page/p42/1",
+          "id": "https://iiif.arcipelago-ceresa.digitaleditions.ch/presentation/page/p42/1",
           "type": "AnnotationPage",
           "items": [
             {
-              "id": "https://iiif.arcipelago-ceresa.digitaleditions.ch/annotation/p0042-image",
+              "id": "https://iiif.arcipelago-ceresa.digitaleditions.ch/presentation/annotation/p0042-image",
               "type": "Annotation",
               "motivation": "painting",
               "body": {
@@ -1643,14 +1643,14 @@
                   }
                 ]
               },
-              "target": "https://iiif.arcipelago-ceresa.digitaleditions.ch/canvas/p42"
+              "target": "https://iiif.arcipelago-ceresa.digitaleditions.ch/presentation/canvas/p42"
             }
           ]
         }
       ]
     },
     {
-      "id": "https://iiif.arcipelago-ceresa.digitaleditions.ch/canvas/p43",
+      "id": "https://iiif.arcipelago-ceresa.digitaleditions.ch/presentation/canvas/p43",
       "type": "Canvas",
       "label": {
         "en": [
@@ -1661,11 +1661,11 @@
       "width": 9436,
       "items": [
         {
-          "id": "https://iiif.arcipelago-ceresa.digitaleditions.ch/page/p43/1",
+          "id": "https://iiif.arcipelago-ceresa.digitaleditions.ch/presentation/page/p43/1",
           "type": "AnnotationPage",
           "items": [
             {
-              "id": "https://iiif.arcipelago-ceresa.digitaleditions.ch/annotation/p0043-image",
+              "id": "https://iiif.arcipelago-ceresa.digitaleditions.ch/presentation/annotation/p0043-image",
               "type": "Annotation",
               "motivation": "painting",
               "body": {
@@ -1682,14 +1682,14 @@
                   }
                 ]
               },
-              "target": "https://iiif.arcipelago-ceresa.digitaleditions.ch/canvas/p43"
+              "target": "https://iiif.arcipelago-ceresa.digitaleditions.ch/presentation/canvas/p43"
             }
           ]
         }
       ]
     },
     {
-      "id": "https://iiif.arcipelago-ceresa.digitaleditions.ch/canvas/p44",
+      "id": "https://iiif.arcipelago-ceresa.digitaleditions.ch/presentation/canvas/p44",
       "type": "Canvas",
       "label": {
         "en": [
@@ -1700,11 +1700,11 @@
       "width": 9436,
       "items": [
         {
-          "id": "https://iiif.arcipelago-ceresa.digitaleditions.ch/page/p44/1",
+          "id": "https://iiif.arcipelago-ceresa.digitaleditions.ch/presentation/page/p44/1",
           "type": "AnnotationPage",
           "items": [
             {
-              "id": "https://iiif.arcipelago-ceresa.digitaleditions.ch/annotation/p0044-image",
+              "id": "https://iiif.arcipelago-ceresa.digitaleditions.ch/presentation/annotation/p0044-image",
               "type": "Annotation",
               "motivation": "painting",
               "body": {
@@ -1721,14 +1721,14 @@
                   }
                 ]
               },
-              "target": "https://iiif.arcipelago-ceresa.digitaleditions.ch/canvas/p44"
+              "target": "https://iiif.arcipelago-ceresa.digitaleditions.ch/presentation/canvas/p44"
             }
           ]
         }
       ]
     },
     {
-      "id": "https://iiif.arcipelago-ceresa.digitaleditions.ch/canvas/p45",
+      "id": "https://iiif.arcipelago-ceresa.digitaleditions.ch/presentation/canvas/p45",
       "type": "Canvas",
       "label": {
         "en": [
@@ -1739,11 +1739,11 @@
       "width": 9436,
       "items": [
         {
-          "id": "https://iiif.arcipelago-ceresa.digitaleditions.ch/page/p45/1",
+          "id": "https://iiif.arcipelago-ceresa.digitaleditions.ch/presentation/page/p45/1",
           "type": "AnnotationPage",
           "items": [
             {
-              "id": "https://iiif.arcipelago-ceresa.digitaleditions.ch/annotation/p0045-image",
+              "id": "https://iiif.arcipelago-ceresa.digitaleditions.ch/presentation/annotation/p0045-image",
               "type": "Annotation",
               "motivation": "painting",
               "body": {
@@ -1760,14 +1760,14 @@
                   }
                 ]
               },
-              "target": "https://iiif.arcipelago-ceresa.digitaleditions.ch/canvas/p45"
+              "target": "https://iiif.arcipelago-ceresa.digitaleditions.ch/presentation/canvas/p45"
             }
           ]
         }
       ]
     },
     {
-      "id": "https://iiif.arcipelago-ceresa.digitaleditions.ch/canvas/p46",
+      "id": "https://iiif.arcipelago-ceresa.digitaleditions.ch/presentation/canvas/p46",
       "type": "Canvas",
       "label": {
         "en": [
@@ -1778,11 +1778,11 @@
       "width": 9436,
       "items": [
         {
-          "id": "https://iiif.arcipelago-ceresa.digitaleditions.ch/page/p46/1",
+          "id": "https://iiif.arcipelago-ceresa.digitaleditions.ch/presentation/page/p46/1",
           "type": "AnnotationPage",
           "items": [
             {
-              "id": "https://iiif.arcipelago-ceresa.digitaleditions.ch/annotation/p0046-image",
+              "id": "https://iiif.arcipelago-ceresa.digitaleditions.ch/presentation/annotation/p0046-image",
               "type": "Annotation",
               "motivation": "painting",
               "body": {
@@ -1799,14 +1799,14 @@
                   }
                 ]
               },
-              "target": "https://iiif.arcipelago-ceresa.digitaleditions.ch/canvas/p46"
+              "target": "https://iiif.arcipelago-ceresa.digitaleditions.ch/presentation/canvas/p46"
             }
           ]
         }
       ]
     },
     {
-      "id": "https://iiif.arcipelago-ceresa.digitaleditions.ch/canvas/p47",
+      "id": "https://iiif.arcipelago-ceresa.digitaleditions.ch/presentation/canvas/p47",
       "type": "Canvas",
       "label": {
         "en": [
@@ -1817,11 +1817,11 @@
       "width": 9436,
       "items": [
         {
-          "id": "https://iiif.arcipelago-ceresa.digitaleditions.ch/page/p47/1",
+          "id": "https://iiif.arcipelago-ceresa.digitaleditions.ch/presentation/page/p47/1",
           "type": "AnnotationPage",
           "items": [
             {
-              "id": "https://iiif.arcipelago-ceresa.digitaleditions.ch/annotation/p0047-image",
+              "id": "https://iiif.arcipelago-ceresa.digitaleditions.ch/presentation/annotation/p0047-image",
               "type": "Annotation",
               "motivation": "painting",
               "body": {
@@ -1838,14 +1838,14 @@
                   }
                 ]
               },
-              "target": "https://iiif.arcipelago-ceresa.digitaleditions.ch/canvas/p47"
+              "target": "https://iiif.arcipelago-ceresa.digitaleditions.ch/presentation/canvas/p47"
             }
           ]
         }
       ]
     },
     {
-      "id": "https://iiif.arcipelago-ceresa.digitaleditions.ch/canvas/p48",
+      "id": "https://iiif.arcipelago-ceresa.digitaleditions.ch/presentation/canvas/p48",
       "type": "Canvas",
       "label": {
         "en": [
@@ -1856,11 +1856,11 @@
       "width": 9436,
       "items": [
         {
-          "id": "https://iiif.arcipelago-ceresa.digitaleditions.ch/page/p48/1",
+          "id": "https://iiif.arcipelago-ceresa.digitaleditions.ch/presentation/page/p48/1",
           "type": "AnnotationPage",
           "items": [
             {
-              "id": "https://iiif.arcipelago-ceresa.digitaleditions.ch/annotation/p0048-image",
+              "id": "https://iiif.arcipelago-ceresa.digitaleditions.ch/presentation/annotation/p0048-image",
               "type": "Annotation",
               "motivation": "painting",
               "body": {
@@ -1877,14 +1877,14 @@
                   }
                 ]
               },
-              "target": "https://iiif.arcipelago-ceresa.digitaleditions.ch/canvas/p48"
+              "target": "https://iiif.arcipelago-ceresa.digitaleditions.ch/presentation/canvas/p48"
             }
           ]
         }
       ]
     },
     {
-      "id": "https://iiif.arcipelago-ceresa.digitaleditions.ch/canvas/p49",
+      "id": "https://iiif.arcipelago-ceresa.digitaleditions.ch/presentation/canvas/p49",
       "type": "Canvas",
       "label": {
         "en": [
@@ -1895,11 +1895,11 @@
       "width": 9436,
       "items": [
         {
-          "id": "https://iiif.arcipelago-ceresa.digitaleditions.ch/page/p49/1",
+          "id": "https://iiif.arcipelago-ceresa.digitaleditions.ch/presentation/page/p49/1",
           "type": "AnnotationPage",
           "items": [
             {
-              "id": "https://iiif.arcipelago-ceresa.digitaleditions.ch/annotation/p0049-image",
+              "id": "https://iiif.arcipelago-ceresa.digitaleditions.ch/presentation/annotation/p0049-image",
               "type": "Annotation",
               "motivation": "painting",
               "body": {
@@ -1916,14 +1916,14 @@
                   }
                 ]
               },
-              "target": "https://iiif.arcipelago-ceresa.digitaleditions.ch/canvas/p49"
+              "target": "https://iiif.arcipelago-ceresa.digitaleditions.ch/presentation/canvas/p49"
             }
           ]
         }
       ]
     },
     {
-      "id": "https://iiif.arcipelago-ceresa.digitaleditions.ch/canvas/p50",
+      "id": "https://iiif.arcipelago-ceresa.digitaleditions.ch/presentation/canvas/p50",
       "type": "Canvas",
       "label": {
         "en": [
@@ -1934,11 +1934,11 @@
       "width": 9436,
       "items": [
         {
-          "id": "https://iiif.arcipelago-ceresa.digitaleditions.ch/page/p50/1",
+          "id": "https://iiif.arcipelago-ceresa.digitaleditions.ch/presentation/page/p50/1",
           "type": "AnnotationPage",
           "items": [
             {
-              "id": "https://iiif.arcipelago-ceresa.digitaleditions.ch/annotation/p0050-image",
+              "id": "https://iiif.arcipelago-ceresa.digitaleditions.ch/presentation/annotation/p0050-image",
               "type": "Annotation",
               "motivation": "painting",
               "body": {
@@ -1955,14 +1955,14 @@
                   }
                 ]
               },
-              "target": "https://iiif.arcipelago-ceresa.digitaleditions.ch/canvas/p50"
+              "target": "https://iiif.arcipelago-ceresa.digitaleditions.ch/presentation/canvas/p50"
             }
           ]
         }
       ]
     },
     {
-      "id": "https://iiif.arcipelago-ceresa.digitaleditions.ch/canvas/p51",
+      "id": "https://iiif.arcipelago-ceresa.digitaleditions.ch/presentation/canvas/p51",
       "type": "Canvas",
       "label": {
         "en": [
@@ -1973,11 +1973,11 @@
       "width": 9436,
       "items": [
         {
-          "id": "https://iiif.arcipelago-ceresa.digitaleditions.ch/page/p51/1",
+          "id": "https://iiif.arcipelago-ceresa.digitaleditions.ch/presentation/page/p51/1",
           "type": "AnnotationPage",
           "items": [
             {
-              "id": "https://iiif.arcipelago-ceresa.digitaleditions.ch/annotation/p0051-image",
+              "id": "https://iiif.arcipelago-ceresa.digitaleditions.ch/presentation/annotation/p0051-image",
               "type": "Annotation",
               "motivation": "painting",
               "body": {
@@ -1994,14 +1994,14 @@
                   }
                 ]
               },
-              "target": "https://iiif.arcipelago-ceresa.digitaleditions.ch/canvas/p51"
+              "target": "https://iiif.arcipelago-ceresa.digitaleditions.ch/presentation/canvas/p51"
             }
           ]
         }
       ]
     },
     {
-      "id": "https://iiif.arcipelago-ceresa.digitaleditions.ch/canvas/p52",
+      "id": "https://iiif.arcipelago-ceresa.digitaleditions.ch/presentation/canvas/p52",
       "type": "Canvas",
       "label": {
         "en": [
@@ -2012,11 +2012,11 @@
       "width": 9436,
       "items": [
         {
-          "id": "https://iiif.arcipelago-ceresa.digitaleditions.ch/page/p52/1",
+          "id": "https://iiif.arcipelago-ceresa.digitaleditions.ch/presentation/page/p52/1",
           "type": "AnnotationPage",
           "items": [
             {
-              "id": "https://iiif.arcipelago-ceresa.digitaleditions.ch/annotation/p0052-image",
+              "id": "https://iiif.arcipelago-ceresa.digitaleditions.ch/presentation/annotation/p0052-image",
               "type": "Annotation",
               "motivation": "painting",
               "body": {
@@ -2033,14 +2033,14 @@
                   }
                 ]
               },
-              "target": "https://iiif.arcipelago-ceresa.digitaleditions.ch/canvas/p52"
+              "target": "https://iiif.arcipelago-ceresa.digitaleditions.ch/presentation/canvas/p52"
             }
           ]
         }
       ]
     },
     {
-      "id": "https://iiif.arcipelago-ceresa.digitaleditions.ch/canvas/p53",
+      "id": "https://iiif.arcipelago-ceresa.digitaleditions.ch/presentation/canvas/p53",
       "type": "Canvas",
       "label": {
         "en": [
@@ -2051,11 +2051,11 @@
       "width": 9436,
       "items": [
         {
-          "id": "https://iiif.arcipelago-ceresa.digitaleditions.ch/page/p53/1",
+          "id": "https://iiif.arcipelago-ceresa.digitaleditions.ch/presentation/page/p53/1",
           "type": "AnnotationPage",
           "items": [
             {
-              "id": "https://iiif.arcipelago-ceresa.digitaleditions.ch/annotation/p0053-image",
+              "id": "https://iiif.arcipelago-ceresa.digitaleditions.ch/presentation/annotation/p0053-image",
               "type": "Annotation",
               "motivation": "painting",
               "body": {
@@ -2072,14 +2072,14 @@
                   }
                 ]
               },
-              "target": "https://iiif.arcipelago-ceresa.digitaleditions.ch/canvas/p53"
+              "target": "https://iiif.arcipelago-ceresa.digitaleditions.ch/presentation/canvas/p53"
             }
           ]
         }
       ]
     },
     {
-      "id": "https://iiif.arcipelago-ceresa.digitaleditions.ch/canvas/p54",
+      "id": "https://iiif.arcipelago-ceresa.digitaleditions.ch/presentation/canvas/p54",
       "type": "Canvas",
       "label": {
         "en": [
@@ -2090,11 +2090,11 @@
       "width": 9436,
       "items": [
         {
-          "id": "https://iiif.arcipelago-ceresa.digitaleditions.ch/page/p54/1",
+          "id": "https://iiif.arcipelago-ceresa.digitaleditions.ch/presentation/page/p54/1",
           "type": "AnnotationPage",
           "items": [
             {
-              "id": "https://iiif.arcipelago-ceresa.digitaleditions.ch/annotation/p0054-image",
+              "id": "https://iiif.arcipelago-ceresa.digitaleditions.ch/presentation/annotation/p0054-image",
               "type": "Annotation",
               "motivation": "painting",
               "body": {
@@ -2111,14 +2111,14 @@
                   }
                 ]
               },
-              "target": "https://iiif.arcipelago-ceresa.digitaleditions.ch/canvas/p54"
+              "target": "https://iiif.arcipelago-ceresa.digitaleditions.ch/presentation/canvas/p54"
             }
           ]
         }
       ]
     },
     {
-      "id": "https://iiif.arcipelago-ceresa.digitaleditions.ch/canvas/p55",
+      "id": "https://iiif.arcipelago-ceresa.digitaleditions.ch/presentation/canvas/p55",
       "type": "Canvas",
       "label": {
         "en": [
@@ -2129,11 +2129,11 @@
       "width": 9436,
       "items": [
         {
-          "id": "https://iiif.arcipelago-ceresa.digitaleditions.ch/page/p55/1",
+          "id": "https://iiif.arcipelago-ceresa.digitaleditions.ch/presentation/page/p55/1",
           "type": "AnnotationPage",
           "items": [
             {
-              "id": "https://iiif.arcipelago-ceresa.digitaleditions.ch/annotation/p0055-image",
+              "id": "https://iiif.arcipelago-ceresa.digitaleditions.ch/presentation/annotation/p0055-image",
               "type": "Annotation",
               "motivation": "painting",
               "body": {
@@ -2150,14 +2150,14 @@
                   }
                 ]
               },
-              "target": "https://iiif.arcipelago-ceresa.digitaleditions.ch/canvas/p55"
+              "target": "https://iiif.arcipelago-ceresa.digitaleditions.ch/presentation/canvas/p55"
             }
           ]
         }
       ]
     },
     {
-      "id": "https://iiif.arcipelago-ceresa.digitaleditions.ch/canvas/p56",
+      "id": "https://iiif.arcipelago-ceresa.digitaleditions.ch/presentation/canvas/p56",
       "type": "Canvas",
       "label": {
         "en": [
@@ -2168,11 +2168,11 @@
       "width": 9436,
       "items": [
         {
-          "id": "https://iiif.arcipelago-ceresa.digitaleditions.ch/page/p56/1",
+          "id": "https://iiif.arcipelago-ceresa.digitaleditions.ch/presentation/page/p56/1",
           "type": "AnnotationPage",
           "items": [
             {
-              "id": "https://iiif.arcipelago-ceresa.digitaleditions.ch/annotation/p0056-image",
+              "id": "https://iiif.arcipelago-ceresa.digitaleditions.ch/presentation/annotation/p0056-image",
               "type": "Annotation",
               "motivation": "painting",
               "body": {
@@ -2189,14 +2189,14 @@
                   }
                 ]
               },
-              "target": "https://iiif.arcipelago-ceresa.digitaleditions.ch/canvas/p56"
+              "target": "https://iiif.arcipelago-ceresa.digitaleditions.ch/presentation/canvas/p56"
             }
           ]
         }
       ]
     },
     {
-      "id": "https://iiif.arcipelago-ceresa.digitaleditions.ch/canvas/p57",
+      "id": "https://iiif.arcipelago-ceresa.digitaleditions.ch/presentation/canvas/p57",
       "type": "Canvas",
       "label": {
         "en": [
@@ -2207,11 +2207,11 @@
       "width": 9436,
       "items": [
         {
-          "id": "https://iiif.arcipelago-ceresa.digitaleditions.ch/page/p57/1",
+          "id": "https://iiif.arcipelago-ceresa.digitaleditions.ch/presentation/page/p57/1",
           "type": "AnnotationPage",
           "items": [
             {
-              "id": "https://iiif.arcipelago-ceresa.digitaleditions.ch/annotation/p0057-image",
+              "id": "https://iiif.arcipelago-ceresa.digitaleditions.ch/presentation/annotation/p0057-image",
               "type": "Annotation",
               "motivation": "painting",
               "body": {
@@ -2228,14 +2228,14 @@
                   }
                 ]
               },
-              "target": "https://iiif.arcipelago-ceresa.digitaleditions.ch/canvas/p57"
+              "target": "https://iiif.arcipelago-ceresa.digitaleditions.ch/presentation/canvas/p57"
             }
           ]
         }
       ]
     },
     {
-      "id": "https://iiif.arcipelago-ceresa.digitaleditions.ch/canvas/p58",
+      "id": "https://iiif.arcipelago-ceresa.digitaleditions.ch/presentation/canvas/p58",
       "type": "Canvas",
       "label": {
         "en": [
@@ -2246,11 +2246,11 @@
       "width": 9436,
       "items": [
         {
-          "id": "https://iiif.arcipelago-ceresa.digitaleditions.ch/page/p58/1",
+          "id": "https://iiif.arcipelago-ceresa.digitaleditions.ch/presentation/page/p58/1",
           "type": "AnnotationPage",
           "items": [
             {
-              "id": "https://iiif.arcipelago-ceresa.digitaleditions.ch/annotation/p0058-image",
+              "id": "https://iiif.arcipelago-ceresa.digitaleditions.ch/presentation/annotation/p0058-image",
               "type": "Annotation",
               "motivation": "painting",
               "body": {
@@ -2267,14 +2267,14 @@
                   }
                 ]
               },
-              "target": "https://iiif.arcipelago-ceresa.digitaleditions.ch/canvas/p58"
+              "target": "https://iiif.arcipelago-ceresa.digitaleditions.ch/presentation/canvas/p58"
             }
           ]
         }
       ]
     },
     {
-      "id": "https://iiif.arcipelago-ceresa.digitaleditions.ch/canvas/p59",
+      "id": "https://iiif.arcipelago-ceresa.digitaleditions.ch/presentation/canvas/p59",
       "type": "Canvas",
       "label": {
         "en": [
@@ -2285,11 +2285,11 @@
       "width": 9436,
       "items": [
         {
-          "id": "https://iiif.arcipelago-ceresa.digitaleditions.ch/page/p59/1",
+          "id": "https://iiif.arcipelago-ceresa.digitaleditions.ch/presentation/page/p59/1",
           "type": "AnnotationPage",
           "items": [
             {
-              "id": "https://iiif.arcipelago-ceresa.digitaleditions.ch/annotation/p0059-image",
+              "id": "https://iiif.arcipelago-ceresa.digitaleditions.ch/presentation/annotation/p0059-image",
               "type": "Annotation",
               "motivation": "painting",
               "body": {
@@ -2306,14 +2306,14 @@
                   }
                 ]
               },
-              "target": "https://iiif.arcipelago-ceresa.digitaleditions.ch/canvas/p59"
+              "target": "https://iiif.arcipelago-ceresa.digitaleditions.ch/presentation/canvas/p59"
             }
           ]
         }
       ]
     },
     {
-      "id": "https://iiif.arcipelago-ceresa.digitaleditions.ch/canvas/p60",
+      "id": "https://iiif.arcipelago-ceresa.digitaleditions.ch/presentation/canvas/p60",
       "type": "Canvas",
       "label": {
         "en": [
@@ -2324,11 +2324,11 @@
       "width": 9436,
       "items": [
         {
-          "id": "https://iiif.arcipelago-ceresa.digitaleditions.ch/page/p60/1",
+          "id": "https://iiif.arcipelago-ceresa.digitaleditions.ch/presentation/page/p60/1",
           "type": "AnnotationPage",
           "items": [
             {
-              "id": "https://iiif.arcipelago-ceresa.digitaleditions.ch/annotation/p0060-image",
+              "id": "https://iiif.arcipelago-ceresa.digitaleditions.ch/presentation/annotation/p0060-image",
               "type": "Annotation",
               "motivation": "painting",
               "body": {
@@ -2345,14 +2345,14 @@
                   }
                 ]
               },
-              "target": "https://iiif.arcipelago-ceresa.digitaleditions.ch/canvas/p60"
+              "target": "https://iiif.arcipelago-ceresa.digitaleditions.ch/presentation/canvas/p60"
             }
           ]
         }
       ]
     },
     {
-      "id": "https://iiif.arcipelago-ceresa.digitaleditions.ch/canvas/p61",
+      "id": "https://iiif.arcipelago-ceresa.digitaleditions.ch/presentation/canvas/p61",
       "type": "Canvas",
       "label": {
         "en": [
@@ -2363,11 +2363,11 @@
       "width": 9436,
       "items": [
         {
-          "id": "https://iiif.arcipelago-ceresa.digitaleditions.ch/page/p61/1",
+          "id": "https://iiif.arcipelago-ceresa.digitaleditions.ch/presentation/page/p61/1",
           "type": "AnnotationPage",
           "items": [
             {
-              "id": "https://iiif.arcipelago-ceresa.digitaleditions.ch/annotation/p0061-image",
+              "id": "https://iiif.arcipelago-ceresa.digitaleditions.ch/presentation/annotation/p0061-image",
               "type": "Annotation",
               "motivation": "painting",
               "body": {
@@ -2384,14 +2384,14 @@
                   }
                 ]
               },
-              "target": "https://iiif.arcipelago-ceresa.digitaleditions.ch/canvas/p61"
+              "target": "https://iiif.arcipelago-ceresa.digitaleditions.ch/presentation/canvas/p61"
             }
           ]
         }
       ]
     },
     {
-      "id": "https://iiif.arcipelago-ceresa.digitaleditions.ch/canvas/p62",
+      "id": "https://iiif.arcipelago-ceresa.digitaleditions.ch/presentation/canvas/p62",
       "type": "Canvas",
       "label": {
         "en": [
@@ -2402,11 +2402,11 @@
       "width": 9436,
       "items": [
         {
-          "id": "https://iiif.arcipelago-ceresa.digitaleditions.ch/page/p62/1",
+          "id": "https://iiif.arcipelago-ceresa.digitaleditions.ch/presentation/page/p62/1",
           "type": "AnnotationPage",
           "items": [
             {
-              "id": "https://iiif.arcipelago-ceresa.digitaleditions.ch/annotation/p0062-image",
+              "id": "https://iiif.arcipelago-ceresa.digitaleditions.ch/presentation/annotation/p0062-image",
               "type": "Annotation",
               "motivation": "painting",
               "body": {
@@ -2423,14 +2423,14 @@
                   }
                 ]
               },
-              "target": "https://iiif.arcipelago-ceresa.digitaleditions.ch/canvas/p62"
+              "target": "https://iiif.arcipelago-ceresa.digitaleditions.ch/presentation/canvas/p62"
             }
           ]
         }
       ]
     },
     {
-      "id": "https://iiif.arcipelago-ceresa.digitaleditions.ch/canvas/p63",
+      "id": "https://iiif.arcipelago-ceresa.digitaleditions.ch/presentation/canvas/p63",
       "type": "Canvas",
       "label": {
         "en": [
@@ -2441,11 +2441,11 @@
       "width": 9436,
       "items": [
         {
-          "id": "https://iiif.arcipelago-ceresa.digitaleditions.ch/page/p63/1",
+          "id": "https://iiif.arcipelago-ceresa.digitaleditions.ch/presentation/page/p63/1",
           "type": "AnnotationPage",
           "items": [
             {
-              "id": "https://iiif.arcipelago-ceresa.digitaleditions.ch/annotation/p0063-image",
+              "id": "https://iiif.arcipelago-ceresa.digitaleditions.ch/presentation/annotation/p0063-image",
               "type": "Annotation",
               "motivation": "painting",
               "body": {
@@ -2462,14 +2462,14 @@
                   }
                 ]
               },
-              "target": "https://iiif.arcipelago-ceresa.digitaleditions.ch/canvas/p63"
+              "target": "https://iiif.arcipelago-ceresa.digitaleditions.ch/presentation/canvas/p63"
             }
           ]
         }
       ]
     },
     {
-      "id": "https://iiif.arcipelago-ceresa.digitaleditions.ch/canvas/p64",
+      "id": "https://iiif.arcipelago-ceresa.digitaleditions.ch/presentation/canvas/p64",
       "type": "Canvas",
       "label": {
         "en": [
@@ -2480,11 +2480,11 @@
       "width": 9436,
       "items": [
         {
-          "id": "https://iiif.arcipelago-ceresa.digitaleditions.ch/page/p64/1",
+          "id": "https://iiif.arcipelago-ceresa.digitaleditions.ch/presentation/page/p64/1",
           "type": "AnnotationPage",
           "items": [
             {
-              "id": "https://iiif.arcipelago-ceresa.digitaleditions.ch/annotation/p0064-image",
+              "id": "https://iiif.arcipelago-ceresa.digitaleditions.ch/presentation/annotation/p0064-image",
               "type": "Annotation",
               "motivation": "painting",
               "body": {
@@ -2501,14 +2501,14 @@
                   }
                 ]
               },
-              "target": "https://iiif.arcipelago-ceresa.digitaleditions.ch/canvas/p64"
+              "target": "https://iiif.arcipelago-ceresa.digitaleditions.ch/presentation/canvas/p64"
             }
           ]
         }
       ]
     },
     {
-      "id": "https://iiif.arcipelago-ceresa.digitaleditions.ch/canvas/p65",
+      "id": "https://iiif.arcipelago-ceresa.digitaleditions.ch/presentation/canvas/p65",
       "type": "Canvas",
       "label": {
         "en": [
@@ -2519,11 +2519,11 @@
       "width": 9436,
       "items": [
         {
-          "id": "https://iiif.arcipelago-ceresa.digitaleditions.ch/page/p65/1",
+          "id": "https://iiif.arcipelago-ceresa.digitaleditions.ch/presentation/page/p65/1",
           "type": "AnnotationPage",
           "items": [
             {
-              "id": "https://iiif.arcipelago-ceresa.digitaleditions.ch/annotation/p0065-image",
+              "id": "https://iiif.arcipelago-ceresa.digitaleditions.ch/presentation/annotation/p0065-image",
               "type": "Annotation",
               "motivation": "painting",
               "body": {
@@ -2540,14 +2540,14 @@
                   }
                 ]
               },
-              "target": "https://iiif.arcipelago-ceresa.digitaleditions.ch/canvas/p65"
+              "target": "https://iiif.arcipelago-ceresa.digitaleditions.ch/presentation/canvas/p65"
             }
           ]
         }
       ]
     },
     {
-      "id": "https://iiif.arcipelago-ceresa.digitaleditions.ch/canvas/p66",
+      "id": "https://iiif.arcipelago-ceresa.digitaleditions.ch/presentation/canvas/p66",
       "type": "Canvas",
       "label": {
         "en": [
@@ -2558,11 +2558,11 @@
       "width": 9436,
       "items": [
         {
-          "id": "https://iiif.arcipelago-ceresa.digitaleditions.ch/page/p66/1",
+          "id": "https://iiif.arcipelago-ceresa.digitaleditions.ch/presentation/page/p66/1",
           "type": "AnnotationPage",
           "items": [
             {
-              "id": "https://iiif.arcipelago-ceresa.digitaleditions.ch/annotation/p0066-image",
+              "id": "https://iiif.arcipelago-ceresa.digitaleditions.ch/presentation/annotation/p0066-image",
               "type": "Annotation",
               "motivation": "painting",
               "body": {
@@ -2579,14 +2579,14 @@
                   }
                 ]
               },
-              "target": "https://iiif.arcipelago-ceresa.digitaleditions.ch/canvas/p66"
+              "target": "https://iiif.arcipelago-ceresa.digitaleditions.ch/presentation/canvas/p66"
             }
           ]
         }
       ]
     },
     {
-      "id": "https://iiif.arcipelago-ceresa.digitaleditions.ch/canvas/p67",
+      "id": "https://iiif.arcipelago-ceresa.digitaleditions.ch/presentation/canvas/p67",
       "type": "Canvas",
       "label": {
         "en": [
@@ -2597,11 +2597,11 @@
       "width": 9436,
       "items": [
         {
-          "id": "https://iiif.arcipelago-ceresa.digitaleditions.ch/page/p67/1",
+          "id": "https://iiif.arcipelago-ceresa.digitaleditions.ch/presentation/page/p67/1",
           "type": "AnnotationPage",
           "items": [
             {
-              "id": "https://iiif.arcipelago-ceresa.digitaleditions.ch/annotation/p0067-image",
+              "id": "https://iiif.arcipelago-ceresa.digitaleditions.ch/presentation/annotation/p0067-image",
               "type": "Annotation",
               "motivation": "painting",
               "body": {
@@ -2618,14 +2618,14 @@
                   }
                 ]
               },
-              "target": "https://iiif.arcipelago-ceresa.digitaleditions.ch/canvas/p67"
+              "target": "https://iiif.arcipelago-ceresa.digitaleditions.ch/presentation/canvas/p67"
             }
           ]
         }
       ]
     },
     {
-      "id": "https://iiif.arcipelago-ceresa.digitaleditions.ch/canvas/p68",
+      "id": "https://iiif.arcipelago-ceresa.digitaleditions.ch/presentation/canvas/p68",
       "type": "Canvas",
       "label": {
         "en": [
@@ -2636,11 +2636,11 @@
       "width": 9436,
       "items": [
         {
-          "id": "https://iiif.arcipelago-ceresa.digitaleditions.ch/page/p68/1",
+          "id": "https://iiif.arcipelago-ceresa.digitaleditions.ch/presentation/page/p68/1",
           "type": "AnnotationPage",
           "items": [
             {
-              "id": "https://iiif.arcipelago-ceresa.digitaleditions.ch/annotation/p0068-image",
+              "id": "https://iiif.arcipelago-ceresa.digitaleditions.ch/presentation/annotation/p0068-image",
               "type": "Annotation",
               "motivation": "painting",
               "body": {
@@ -2657,14 +2657,14 @@
                   }
                 ]
               },
-              "target": "https://iiif.arcipelago-ceresa.digitaleditions.ch/canvas/p68"
+              "target": "https://iiif.arcipelago-ceresa.digitaleditions.ch/presentation/canvas/p68"
             }
           ]
         }
       ]
     },
     {
-      "id": "https://iiif.arcipelago-ceresa.digitaleditions.ch/canvas/p69",
+      "id": "https://iiif.arcipelago-ceresa.digitaleditions.ch/presentation/canvas/p69",
       "type": "Canvas",
       "label": {
         "en": [
@@ -2675,11 +2675,11 @@
       "width": 9436,
       "items": [
         {
-          "id": "https://iiif.arcipelago-ceresa.digitaleditions.ch/page/p69/1",
+          "id": "https://iiif.arcipelago-ceresa.digitaleditions.ch/presentation/page/p69/1",
           "type": "AnnotationPage",
           "items": [
             {
-              "id": "https://iiif.arcipelago-ceresa.digitaleditions.ch/annotation/p0069-image",
+              "id": "https://iiif.arcipelago-ceresa.digitaleditions.ch/presentation/annotation/p0069-image",
               "type": "Annotation",
               "motivation": "painting",
               "body": {
@@ -2696,14 +2696,14 @@
                   }
                 ]
               },
-              "target": "https://iiif.arcipelago-ceresa.digitaleditions.ch/canvas/p69"
+              "target": "https://iiif.arcipelago-ceresa.digitaleditions.ch/presentation/canvas/p69"
             }
           ]
         }
       ]
     },
     {
-      "id": "https://iiif.arcipelago-ceresa.digitaleditions.ch/canvas/p70",
+      "id": "https://iiif.arcipelago-ceresa.digitaleditions.ch/presentation/canvas/p70",
       "type": "Canvas",
       "label": {
         "en": [
@@ -2714,11 +2714,11 @@
       "width": 9436,
       "items": [
         {
-          "id": "https://iiif.arcipelago-ceresa.digitaleditions.ch/page/p70/1",
+          "id": "https://iiif.arcipelago-ceresa.digitaleditions.ch/presentation/page/p70/1",
           "type": "AnnotationPage",
           "items": [
             {
-              "id": "https://iiif.arcipelago-ceresa.digitaleditions.ch/annotation/p0070-image",
+              "id": "https://iiif.arcipelago-ceresa.digitaleditions.ch/presentation/annotation/p0070-image",
               "type": "Annotation",
               "motivation": "painting",
               "body": {
@@ -2735,14 +2735,14 @@
                   }
                 ]
               },
-              "target": "https://iiif.arcipelago-ceresa.digitaleditions.ch/canvas/p70"
+              "target": "https://iiif.arcipelago-ceresa.digitaleditions.ch/presentation/canvas/p70"
             }
           ]
         }
       ]
     },
     {
-      "id": "https://iiif.arcipelago-ceresa.digitaleditions.ch/canvas/p71",
+      "id": "https://iiif.arcipelago-ceresa.digitaleditions.ch/presentation/canvas/p71",
       "type": "Canvas",
       "label": {
         "en": [
@@ -2753,11 +2753,11 @@
       "width": 9436,
       "items": [
         {
-          "id": "https://iiif.arcipelago-ceresa.digitaleditions.ch/page/p71/1",
+          "id": "https://iiif.arcipelago-ceresa.digitaleditions.ch/presentation/page/p71/1",
           "type": "AnnotationPage",
           "items": [
             {
-              "id": "https://iiif.arcipelago-ceresa.digitaleditions.ch/annotation/p0071-image",
+              "id": "https://iiif.arcipelago-ceresa.digitaleditions.ch/presentation/annotation/p0071-image",
               "type": "Annotation",
               "motivation": "painting",
               "body": {
@@ -2774,14 +2774,14 @@
                   }
                 ]
               },
-              "target": "https://iiif.arcipelago-ceresa.digitaleditions.ch/canvas/p71"
+              "target": "https://iiif.arcipelago-ceresa.digitaleditions.ch/presentation/canvas/p71"
             }
           ]
         }
       ]
     },
     {
-      "id": "https://iiif.arcipelago-ceresa.digitaleditions.ch/canvas/p72",
+      "id": "https://iiif.arcipelago-ceresa.digitaleditions.ch/presentation/canvas/p72",
       "type": "Canvas",
       "label": {
         "en": [
@@ -2792,11 +2792,11 @@
       "width": 9436,
       "items": [
         {
-          "id": "https://iiif.arcipelago-ceresa.digitaleditions.ch/page/p72/1",
+          "id": "https://iiif.arcipelago-ceresa.digitaleditions.ch/presentation/page/p72/1",
           "type": "AnnotationPage",
           "items": [
             {
-              "id": "https://iiif.arcipelago-ceresa.digitaleditions.ch/annotation/p0072-image",
+              "id": "https://iiif.arcipelago-ceresa.digitaleditions.ch/presentation/annotation/p0072-image",
               "type": "Annotation",
               "motivation": "painting",
               "body": {
@@ -2813,14 +2813,14 @@
                   }
                 ]
               },
-              "target": "https://iiif.arcipelago-ceresa.digitaleditions.ch/canvas/p72"
+              "target": "https://iiif.arcipelago-ceresa.digitaleditions.ch/presentation/canvas/p72"
             }
           ]
         }
       ]
     },
     {
-      "id": "https://iiif.arcipelago-ceresa.digitaleditions.ch/canvas/p73",
+      "id": "https://iiif.arcipelago-ceresa.digitaleditions.ch/presentation/canvas/p73",
       "type": "Canvas",
       "label": {
         "en": [
@@ -2831,11 +2831,11 @@
       "width": 9436,
       "items": [
         {
-          "id": "https://iiif.arcipelago-ceresa.digitaleditions.ch/page/p73/1",
+          "id": "https://iiif.arcipelago-ceresa.digitaleditions.ch/presentation/page/p73/1",
           "type": "AnnotationPage",
           "items": [
             {
-              "id": "https://iiif.arcipelago-ceresa.digitaleditions.ch/annotation/p0073-image",
+              "id": "https://iiif.arcipelago-ceresa.digitaleditions.ch/presentation/annotation/p0073-image",
               "type": "Annotation",
               "motivation": "painting",
               "body": {
@@ -2852,14 +2852,14 @@
                   }
                 ]
               },
-              "target": "https://iiif.arcipelago-ceresa.digitaleditions.ch/canvas/p73"
+              "target": "https://iiif.arcipelago-ceresa.digitaleditions.ch/presentation/canvas/p73"
             }
           ]
         }
       ]
     },
     {
-      "id": "https://iiif.arcipelago-ceresa.digitaleditions.ch/canvas/p74",
+      "id": "https://iiif.arcipelago-ceresa.digitaleditions.ch/presentation/canvas/p74",
       "type": "Canvas",
       "label": {
         "en": [
@@ -2870,11 +2870,11 @@
       "width": 9436,
       "items": [
         {
-          "id": "https://iiif.arcipelago-ceresa.digitaleditions.ch/page/p74/1",
+          "id": "https://iiif.arcipelago-ceresa.digitaleditions.ch/presentation/page/p74/1",
           "type": "AnnotationPage",
           "items": [
             {
-              "id": "https://iiif.arcipelago-ceresa.digitaleditions.ch/annotation/p0074-image",
+              "id": "https://iiif.arcipelago-ceresa.digitaleditions.ch/presentation/annotation/p0074-image",
               "type": "Annotation",
               "motivation": "painting",
               "body": {
@@ -2891,14 +2891,14 @@
                   }
                 ]
               },
-              "target": "https://iiif.arcipelago-ceresa.digitaleditions.ch/canvas/p74"
+              "target": "https://iiif.arcipelago-ceresa.digitaleditions.ch/presentation/canvas/p74"
             }
           ]
         }
       ]
     },
     {
-      "id": "https://iiif.arcipelago-ceresa.digitaleditions.ch/canvas/p75",
+      "id": "https://iiif.arcipelago-ceresa.digitaleditions.ch/presentation/canvas/p75",
       "type": "Canvas",
       "label": {
         "en": [
@@ -2909,11 +2909,11 @@
       "width": 9436,
       "items": [
         {
-          "id": "https://iiif.arcipelago-ceresa.digitaleditions.ch/page/p75/1",
+          "id": "https://iiif.arcipelago-ceresa.digitaleditions.ch/presentation/page/p75/1",
           "type": "AnnotationPage",
           "items": [
             {
-              "id": "https://iiif.arcipelago-ceresa.digitaleditions.ch/annotation/p0075-image",
+              "id": "https://iiif.arcipelago-ceresa.digitaleditions.ch/presentation/annotation/p0075-image",
               "type": "Annotation",
               "motivation": "painting",
               "body": {
@@ -2930,14 +2930,14 @@
                   }
                 ]
               },
-              "target": "https://iiif.arcipelago-ceresa.digitaleditions.ch/canvas/p75"
+              "target": "https://iiif.arcipelago-ceresa.digitaleditions.ch/presentation/canvas/p75"
             }
           ]
         }
       ]
     },
     {
-      "id": "https://iiif.arcipelago-ceresa.digitaleditions.ch/canvas/p76",
+      "id": "https://iiif.arcipelago-ceresa.digitaleditions.ch/presentation/canvas/p76",
       "type": "Canvas",
       "label": {
         "en": [
@@ -2948,11 +2948,11 @@
       "width": 9436,
       "items": [
         {
-          "id": "https://iiif.arcipelago-ceresa.digitaleditions.ch/page/p76/1",
+          "id": "https://iiif.arcipelago-ceresa.digitaleditions.ch/presentation/page/p76/1",
           "type": "AnnotationPage",
           "items": [
             {
-              "id": "https://iiif.arcipelago-ceresa.digitaleditions.ch/annotation/p0076-image",
+              "id": "https://iiif.arcipelago-ceresa.digitaleditions.ch/presentation/annotation/p0076-image",
               "type": "Annotation",
               "motivation": "painting",
               "body": {
@@ -2969,14 +2969,14 @@
                   }
                 ]
               },
-              "target": "https://iiif.arcipelago-ceresa.digitaleditions.ch/canvas/p76"
+              "target": "https://iiif.arcipelago-ceresa.digitaleditions.ch/presentation/canvas/p76"
             }
           ]
         }
       ]
     },
     {
-      "id": "https://iiif.arcipelago-ceresa.digitaleditions.ch/canvas/p77",
+      "id": "https://iiif.arcipelago-ceresa.digitaleditions.ch/presentation/canvas/p77",
       "type": "Canvas",
       "label": {
         "en": [
@@ -2987,11 +2987,11 @@
       "width": 9436,
       "items": [
         {
-          "id": "https://iiif.arcipelago-ceresa.digitaleditions.ch/page/p77/1",
+          "id": "https://iiif.arcipelago-ceresa.digitaleditions.ch/presentation/page/p77/1",
           "type": "AnnotationPage",
           "items": [
             {
-              "id": "https://iiif.arcipelago-ceresa.digitaleditions.ch/annotation/p0077-image",
+              "id": "https://iiif.arcipelago-ceresa.digitaleditions.ch/presentation/annotation/p0077-image",
               "type": "Annotation",
               "motivation": "painting",
               "body": {
@@ -3008,14 +3008,14 @@
                   }
                 ]
               },
-              "target": "https://iiif.arcipelago-ceresa.digitaleditions.ch/canvas/p77"
+              "target": "https://iiif.arcipelago-ceresa.digitaleditions.ch/presentation/canvas/p77"
             }
           ]
         }
       ]
     },
     {
-      "id": "https://iiif.arcipelago-ceresa.digitaleditions.ch/canvas/p78",
+      "id": "https://iiif.arcipelago-ceresa.digitaleditions.ch/presentation/canvas/p78",
       "type": "Canvas",
       "label": {
         "en": [
@@ -3026,11 +3026,11 @@
       "width": 9436,
       "items": [
         {
-          "id": "https://iiif.arcipelago-ceresa.digitaleditions.ch/page/p78/1",
+          "id": "https://iiif.arcipelago-ceresa.digitaleditions.ch/presentation/page/p78/1",
           "type": "AnnotationPage",
           "items": [
             {
-              "id": "https://iiif.arcipelago-ceresa.digitaleditions.ch/annotation/p0078-image",
+              "id": "https://iiif.arcipelago-ceresa.digitaleditions.ch/presentation/annotation/p0078-image",
               "type": "Annotation",
               "motivation": "painting",
               "body": {
@@ -3047,14 +3047,14 @@
                   }
                 ]
               },
-              "target": "https://iiif.arcipelago-ceresa.digitaleditions.ch/canvas/p78"
+              "target": "https://iiif.arcipelago-ceresa.digitaleditions.ch/presentation/canvas/p78"
             }
           ]
         }
       ]
     },
     {
-      "id": "https://iiif.arcipelago-ceresa.digitaleditions.ch/canvas/p79",
+      "id": "https://iiif.arcipelago-ceresa.digitaleditions.ch/presentation/canvas/p79",
       "type": "Canvas",
       "label": {
         "en": [
@@ -3065,11 +3065,11 @@
       "width": 9436,
       "items": [
         {
-          "id": "https://iiif.arcipelago-ceresa.digitaleditions.ch/page/p79/1",
+          "id": "https://iiif.arcipelago-ceresa.digitaleditions.ch/presentation/page/p79/1",
           "type": "AnnotationPage",
           "items": [
             {
-              "id": "https://iiif.arcipelago-ceresa.digitaleditions.ch/annotation/p0079-image",
+              "id": "https://iiif.arcipelago-ceresa.digitaleditions.ch/presentation/annotation/p0079-image",
               "type": "Annotation",
               "motivation": "painting",
               "body": {
@@ -3086,14 +3086,14 @@
                   }
                 ]
               },
-              "target": "https://iiif.arcipelago-ceresa.digitaleditions.ch/canvas/p79"
+              "target": "https://iiif.arcipelago-ceresa.digitaleditions.ch/presentation/canvas/p79"
             }
           ]
         }
       ]
     },
     {
-      "id": "https://iiif.arcipelago-ceresa.digitaleditions.ch/canvas/p80",
+      "id": "https://iiif.arcipelago-ceresa.digitaleditions.ch/presentation/canvas/p80",
       "type": "Canvas",
       "label": {
         "en": [
@@ -3104,11 +3104,11 @@
       "width": 9436,
       "items": [
         {
-          "id": "https://iiif.arcipelago-ceresa.digitaleditions.ch/page/p80/1",
+          "id": "https://iiif.arcipelago-ceresa.digitaleditions.ch/presentation/page/p80/1",
           "type": "AnnotationPage",
           "items": [
             {
-              "id": "https://iiif.arcipelago-ceresa.digitaleditions.ch/annotation/p0080-image",
+              "id": "https://iiif.arcipelago-ceresa.digitaleditions.ch/presentation/annotation/p0080-image",
               "type": "Annotation",
               "motivation": "painting",
               "body": {
@@ -3125,14 +3125,14 @@
                   }
                 ]
               },
-              "target": "https://iiif.arcipelago-ceresa.digitaleditions.ch/canvas/p80"
+              "target": "https://iiif.arcipelago-ceresa.digitaleditions.ch/presentation/canvas/p80"
             }
           ]
         }
       ]
     },
     {
-      "id": "https://iiif.arcipelago-ceresa.digitaleditions.ch/canvas/p81",
+      "id": "https://iiif.arcipelago-ceresa.digitaleditions.ch/presentation/canvas/p81",
       "type": "Canvas",
       "label": {
         "en": [
@@ -3143,11 +3143,11 @@
       "width": 9436,
       "items": [
         {
-          "id": "https://iiif.arcipelago-ceresa.digitaleditions.ch/page/p81/1",
+          "id": "https://iiif.arcipelago-ceresa.digitaleditions.ch/presentation/page/p81/1",
           "type": "AnnotationPage",
           "items": [
             {
-              "id": "https://iiif.arcipelago-ceresa.digitaleditions.ch/annotation/p0081-image",
+              "id": "https://iiif.arcipelago-ceresa.digitaleditions.ch/presentation/annotation/p0081-image",
               "type": "Annotation",
               "motivation": "painting",
               "body": {
@@ -3164,14 +3164,14 @@
                   }
                 ]
               },
-              "target": "https://iiif.arcipelago-ceresa.digitaleditions.ch/canvas/p81"
+              "target": "https://iiif.arcipelago-ceresa.digitaleditions.ch/presentation/canvas/p81"
             }
           ]
         }
       ]
     },
     {
-      "id": "https://iiif.arcipelago-ceresa.digitaleditions.ch/canvas/p82",
+      "id": "https://iiif.arcipelago-ceresa.digitaleditions.ch/presentation/canvas/p82",
       "type": "Canvas",
       "label": {
         "en": [
@@ -3182,11 +3182,11 @@
       "width": 9436,
       "items": [
         {
-          "id": "https://iiif.arcipelago-ceresa.digitaleditions.ch/page/p82/1",
+          "id": "https://iiif.arcipelago-ceresa.digitaleditions.ch/presentation/page/p82/1",
           "type": "AnnotationPage",
           "items": [
             {
-              "id": "https://iiif.arcipelago-ceresa.digitaleditions.ch/annotation/p0082-image",
+              "id": "https://iiif.arcipelago-ceresa.digitaleditions.ch/presentation/annotation/p0082-image",
               "type": "Annotation",
               "motivation": "painting",
               "body": {
@@ -3203,14 +3203,14 @@
                   }
                 ]
               },
-              "target": "https://iiif.arcipelago-ceresa.digitaleditions.ch/canvas/p82"
+              "target": "https://iiif.arcipelago-ceresa.digitaleditions.ch/presentation/canvas/p82"
             }
           ]
         }
       ]
     },
     {
-      "id": "https://iiif.arcipelago-ceresa.digitaleditions.ch/canvas/p83",
+      "id": "https://iiif.arcipelago-ceresa.digitaleditions.ch/presentation/canvas/p83",
       "type": "Canvas",
       "label": {
         "en": [
@@ -3221,11 +3221,11 @@
       "width": 9436,
       "items": [
         {
-          "id": "https://iiif.arcipelago-ceresa.digitaleditions.ch/page/p83/1",
+          "id": "https://iiif.arcipelago-ceresa.digitaleditions.ch/presentation/page/p83/1",
           "type": "AnnotationPage",
           "items": [
             {
-              "id": "https://iiif.arcipelago-ceresa.digitaleditions.ch/annotation/p0083-image",
+              "id": "https://iiif.arcipelago-ceresa.digitaleditions.ch/presentation/annotation/p0083-image",
               "type": "Annotation",
               "motivation": "painting",
               "body": {
@@ -3242,14 +3242,14 @@
                   }
                 ]
               },
-              "target": "https://iiif.arcipelago-ceresa.digitaleditions.ch/canvas/p83"
+              "target": "https://iiif.arcipelago-ceresa.digitaleditions.ch/presentation/canvas/p83"
             }
           ]
         }
       ]
     },
     {
-      "id": "https://iiif.arcipelago-ceresa.digitaleditions.ch/canvas/p84",
+      "id": "https://iiif.arcipelago-ceresa.digitaleditions.ch/presentation/canvas/p84",
       "type": "Canvas",
       "label": {
         "en": [
@@ -3260,11 +3260,11 @@
       "width": 9436,
       "items": [
         {
-          "id": "https://iiif.arcipelago-ceresa.digitaleditions.ch/page/p84/1",
+          "id": "https://iiif.arcipelago-ceresa.digitaleditions.ch/presentation/page/p84/1",
           "type": "AnnotationPage",
           "items": [
             {
-              "id": "https://iiif.arcipelago-ceresa.digitaleditions.ch/annotation/p0084-image",
+              "id": "https://iiif.arcipelago-ceresa.digitaleditions.ch/presentation/annotation/p0084-image",
               "type": "Annotation",
               "motivation": "painting",
               "body": {
@@ -3281,14 +3281,14 @@
                   }
                 ]
               },
-              "target": "https://iiif.arcipelago-ceresa.digitaleditions.ch/canvas/p84"
+              "target": "https://iiif.arcipelago-ceresa.digitaleditions.ch/presentation/canvas/p84"
             }
           ]
         }
       ]
     },
     {
-      "id": "https://iiif.arcipelago-ceresa.digitaleditions.ch/canvas/p85",
+      "id": "https://iiif.arcipelago-ceresa.digitaleditions.ch/presentation/canvas/p85",
       "type": "Canvas",
       "label": {
         "en": [
@@ -3299,11 +3299,11 @@
       "width": 9436,
       "items": [
         {
-          "id": "https://iiif.arcipelago-ceresa.digitaleditions.ch/page/p85/1",
+          "id": "https://iiif.arcipelago-ceresa.digitaleditions.ch/presentation/page/p85/1",
           "type": "AnnotationPage",
           "items": [
             {
-              "id": "https://iiif.arcipelago-ceresa.digitaleditions.ch/annotation/p0085-image",
+              "id": "https://iiif.arcipelago-ceresa.digitaleditions.ch/presentation/annotation/p0085-image",
               "type": "Annotation",
               "motivation": "painting",
               "body": {
@@ -3320,14 +3320,14 @@
                   }
                 ]
               },
-              "target": "https://iiif.arcipelago-ceresa.digitaleditions.ch/canvas/p85"
+              "target": "https://iiif.arcipelago-ceresa.digitaleditions.ch/presentation/canvas/p85"
             }
           ]
         }
       ]
     },
     {
-      "id": "https://iiif.arcipelago-ceresa.digitaleditions.ch/canvas/p86",
+      "id": "https://iiif.arcipelago-ceresa.digitaleditions.ch/presentation/canvas/p86",
       "type": "Canvas",
       "label": {
         "en": [
@@ -3338,11 +3338,11 @@
       "width": 9436,
       "items": [
         {
-          "id": "https://iiif.arcipelago-ceresa.digitaleditions.ch/page/p86/1",
+          "id": "https://iiif.arcipelago-ceresa.digitaleditions.ch/presentation/page/p86/1",
           "type": "AnnotationPage",
           "items": [
             {
-              "id": "https://iiif.arcipelago-ceresa.digitaleditions.ch/annotation/p0086-image",
+              "id": "https://iiif.arcipelago-ceresa.digitaleditions.ch/presentation/annotation/p0086-image",
               "type": "Annotation",
               "motivation": "painting",
               "body": {
@@ -3359,14 +3359,14 @@
                   }
                 ]
               },
-              "target": "https://iiif.arcipelago-ceresa.digitaleditions.ch/canvas/p86"
+              "target": "https://iiif.arcipelago-ceresa.digitaleditions.ch/presentation/canvas/p86"
             }
           ]
         }
       ]
     },
     {
-      "id": "https://iiif.arcipelago-ceresa.digitaleditions.ch/canvas/p87",
+      "id": "https://iiif.arcipelago-ceresa.digitaleditions.ch/presentation/canvas/p87",
       "type": "Canvas",
       "label": {
         "en": [
@@ -3377,11 +3377,11 @@
       "width": 9436,
       "items": [
         {
-          "id": "https://iiif.arcipelago-ceresa.digitaleditions.ch/page/p87/1",
+          "id": "https://iiif.arcipelago-ceresa.digitaleditions.ch/presentation/page/p87/1",
           "type": "AnnotationPage",
           "items": [
             {
-              "id": "https://iiif.arcipelago-ceresa.digitaleditions.ch/annotation/p0087-image",
+              "id": "https://iiif.arcipelago-ceresa.digitaleditions.ch/presentation/annotation/p0087-image",
               "type": "Annotation",
               "motivation": "painting",
               "body": {
@@ -3398,14 +3398,14 @@
                   }
                 ]
               },
-              "target": "https://iiif.arcipelago-ceresa.digitaleditions.ch/canvas/p87"
+              "target": "https://iiif.arcipelago-ceresa.digitaleditions.ch/presentation/canvas/p87"
             }
           ]
         }
       ]
     },
     {
-      "id": "https://iiif.arcipelago-ceresa.digitaleditions.ch/canvas/p88",
+      "id": "https://iiif.arcipelago-ceresa.digitaleditions.ch/presentation/canvas/p88",
       "type": "Canvas",
       "label": {
         "en": [
@@ -3416,11 +3416,11 @@
       "width": 9436,
       "items": [
         {
-          "id": "https://iiif.arcipelago-ceresa.digitaleditions.ch/page/p88/1",
+          "id": "https://iiif.arcipelago-ceresa.digitaleditions.ch/presentation/page/p88/1",
           "type": "AnnotationPage",
           "items": [
             {
-              "id": "https://iiif.arcipelago-ceresa.digitaleditions.ch/annotation/p0088-image",
+              "id": "https://iiif.arcipelago-ceresa.digitaleditions.ch/presentation/annotation/p0088-image",
               "type": "Annotation",
               "motivation": "painting",
               "body": {
@@ -3437,14 +3437,14 @@
                   }
                 ]
               },
-              "target": "https://iiif.arcipelago-ceresa.digitaleditions.ch/canvas/p88"
+              "target": "https://iiif.arcipelago-ceresa.digitaleditions.ch/presentation/canvas/p88"
             }
           ]
         }
       ]
     },
     {
-      "id": "https://iiif.arcipelago-ceresa.digitaleditions.ch/canvas/p89",
+      "id": "https://iiif.arcipelago-ceresa.digitaleditions.ch/presentation/canvas/p89",
       "type": "Canvas",
       "label": {
         "en": [
@@ -3455,11 +3455,11 @@
       "width": 9436,
       "items": [
         {
-          "id": "https://iiif.arcipelago-ceresa.digitaleditions.ch/page/p89/1",
+          "id": "https://iiif.arcipelago-ceresa.digitaleditions.ch/presentation/page/p89/1",
           "type": "AnnotationPage",
           "items": [
             {
-              "id": "https://iiif.arcipelago-ceresa.digitaleditions.ch/annotation/p0089-image",
+              "id": "https://iiif.arcipelago-ceresa.digitaleditions.ch/presentation/annotation/p0089-image",
               "type": "Annotation",
               "motivation": "painting",
               "body": {
@@ -3476,14 +3476,14 @@
                   }
                 ]
               },
-              "target": "https://iiif.arcipelago-ceresa.digitaleditions.ch/canvas/p89"
+              "target": "https://iiif.arcipelago-ceresa.digitaleditions.ch/presentation/canvas/p89"
             }
           ]
         }
       ]
     },
     {
-      "id": "https://iiif.arcipelago-ceresa.digitaleditions.ch/canvas/p90",
+      "id": "https://iiif.arcipelago-ceresa.digitaleditions.ch/presentation/canvas/p90",
       "type": "Canvas",
       "label": {
         "en": [
@@ -3494,11 +3494,11 @@
       "width": 9436,
       "items": [
         {
-          "id": "https://iiif.arcipelago-ceresa.digitaleditions.ch/page/p90/1",
+          "id": "https://iiif.arcipelago-ceresa.digitaleditions.ch/presentation/page/p90/1",
           "type": "AnnotationPage",
           "items": [
             {
-              "id": "https://iiif.arcipelago-ceresa.digitaleditions.ch/annotation/p0090-image",
+              "id": "https://iiif.arcipelago-ceresa.digitaleditions.ch/presentation/annotation/p0090-image",
               "type": "Annotation",
               "motivation": "painting",
               "body": {
@@ -3515,14 +3515,14 @@
                   }
                 ]
               },
-              "target": "https://iiif.arcipelago-ceresa.digitaleditions.ch/canvas/p90"
+              "target": "https://iiif.arcipelago-ceresa.digitaleditions.ch/presentation/canvas/p90"
             }
           ]
         }
       ]
     },
     {
-      "id": "https://iiif.arcipelago-ceresa.digitaleditions.ch/canvas/p91",
+      "id": "https://iiif.arcipelago-ceresa.digitaleditions.ch/presentation/canvas/p91",
       "type": "Canvas",
       "label": {
         "en": [
@@ -3533,11 +3533,11 @@
       "width": 9436,
       "items": [
         {
-          "id": "https://iiif.arcipelago-ceresa.digitaleditions.ch/page/p91/1",
+          "id": "https://iiif.arcipelago-ceresa.digitaleditions.ch/presentation/page/p91/1",
           "type": "AnnotationPage",
           "items": [
             {
-              "id": "https://iiif.arcipelago-ceresa.digitaleditions.ch/annotation/p0091-image",
+              "id": "https://iiif.arcipelago-ceresa.digitaleditions.ch/presentation/annotation/p0091-image",
               "type": "Annotation",
               "motivation": "painting",
               "body": {
@@ -3554,14 +3554,14 @@
                   }
                 ]
               },
-              "target": "https://iiif.arcipelago-ceresa.digitaleditions.ch/canvas/p91"
+              "target": "https://iiif.arcipelago-ceresa.digitaleditions.ch/presentation/canvas/p91"
             }
           ]
         }
       ]
     },
     {
-      "id": "https://iiif.arcipelago-ceresa.digitaleditions.ch/canvas/p92",
+      "id": "https://iiif.arcipelago-ceresa.digitaleditions.ch/presentation/canvas/p92",
       "type": "Canvas",
       "label": {
         "en": [
@@ -3572,11 +3572,11 @@
       "width": 9436,
       "items": [
         {
-          "id": "https://iiif.arcipelago-ceresa.digitaleditions.ch/page/p92/1",
+          "id": "https://iiif.arcipelago-ceresa.digitaleditions.ch/presentation/page/p92/1",
           "type": "AnnotationPage",
           "items": [
             {
-              "id": "https://iiif.arcipelago-ceresa.digitaleditions.ch/annotation/p0092-image",
+              "id": "https://iiif.arcipelago-ceresa.digitaleditions.ch/presentation/annotation/p0092-image",
               "type": "Annotation",
               "motivation": "painting",
               "body": {
@@ -3593,14 +3593,14 @@
                   }
                 ]
               },
-              "target": "https://iiif.arcipelago-ceresa.digitaleditions.ch/canvas/p92"
+              "target": "https://iiif.arcipelago-ceresa.digitaleditions.ch/presentation/canvas/p92"
             }
           ]
         }
       ]
     },
     {
-      "id": "https://iiif.arcipelago-ceresa.digitaleditions.ch/canvas/p93",
+      "id": "https://iiif.arcipelago-ceresa.digitaleditions.ch/presentation/canvas/p93",
       "type": "Canvas",
       "label": {
         "en": [
@@ -3611,11 +3611,11 @@
       "width": 9436,
       "items": [
         {
-          "id": "https://iiif.arcipelago-ceresa.digitaleditions.ch/page/p93/1",
+          "id": "https://iiif.arcipelago-ceresa.digitaleditions.ch/presentation/page/p93/1",
           "type": "AnnotationPage",
           "items": [
             {
-              "id": "https://iiif.arcipelago-ceresa.digitaleditions.ch/annotation/p0093-image",
+              "id": "https://iiif.arcipelago-ceresa.digitaleditions.ch/presentation/annotation/p0093-image",
               "type": "Annotation",
               "motivation": "painting",
               "body": {
@@ -3632,14 +3632,14 @@
                   }
                 ]
               },
-              "target": "https://iiif.arcipelago-ceresa.digitaleditions.ch/canvas/p93"
+              "target": "https://iiif.arcipelago-ceresa.digitaleditions.ch/presentation/canvas/p93"
             }
           ]
         }
       ]
     },
     {
-      "id": "https://iiif.arcipelago-ceresa.digitaleditions.ch/canvas/p94",
+      "id": "https://iiif.arcipelago-ceresa.digitaleditions.ch/presentation/canvas/p94",
       "type": "Canvas",
       "label": {
         "en": [
@@ -3650,11 +3650,11 @@
       "width": 9436,
       "items": [
         {
-          "id": "https://iiif.arcipelago-ceresa.digitaleditions.ch/page/p94/1",
+          "id": "https://iiif.arcipelago-ceresa.digitaleditions.ch/presentation/page/p94/1",
           "type": "AnnotationPage",
           "items": [
             {
-              "id": "https://iiif.arcipelago-ceresa.digitaleditions.ch/annotation/p0094-image",
+              "id": "https://iiif.arcipelago-ceresa.digitaleditions.ch/presentation/annotation/p0094-image",
               "type": "Annotation",
               "motivation": "painting",
               "body": {
@@ -3671,14 +3671,14 @@
                   }
                 ]
               },
-              "target": "https://iiif.arcipelago-ceresa.digitaleditions.ch/canvas/p94"
+              "target": "https://iiif.arcipelago-ceresa.digitaleditions.ch/presentation/canvas/p94"
             }
           ]
         }
       ]
     },
     {
-      "id": "https://iiif.arcipelago-ceresa.digitaleditions.ch/canvas/p95",
+      "id": "https://iiif.arcipelago-ceresa.digitaleditions.ch/presentation/canvas/p95",
       "type": "Canvas",
       "label": {
         "en": [
@@ -3689,11 +3689,11 @@
       "width": 9436,
       "items": [
         {
-          "id": "https://iiif.arcipelago-ceresa.digitaleditions.ch/page/p95/1",
+          "id": "https://iiif.arcipelago-ceresa.digitaleditions.ch/presentation/page/p95/1",
           "type": "AnnotationPage",
           "items": [
             {
-              "id": "https://iiif.arcipelago-ceresa.digitaleditions.ch/annotation/p0095-image",
+              "id": "https://iiif.arcipelago-ceresa.digitaleditions.ch/presentation/annotation/p0095-image",
               "type": "Annotation",
               "motivation": "painting",
               "body": {
@@ -3710,14 +3710,14 @@
                   }
                 ]
               },
-              "target": "https://iiif.arcipelago-ceresa.digitaleditions.ch/canvas/p95"
+              "target": "https://iiif.arcipelago-ceresa.digitaleditions.ch/presentation/canvas/p95"
             }
           ]
         }
       ]
     },
     {
-      "id": "https://iiif.arcipelago-ceresa.digitaleditions.ch/canvas/p96",
+      "id": "https://iiif.arcipelago-ceresa.digitaleditions.ch/presentation/canvas/p96",
       "type": "Canvas",
       "label": {
         "en": [
@@ -3728,11 +3728,11 @@
       "width": 9436,
       "items": [
         {
-          "id": "https://iiif.arcipelago-ceresa.digitaleditions.ch/page/p96/1",
+          "id": "https://iiif.arcipelago-ceresa.digitaleditions.ch/presentation/page/p96/1",
           "type": "AnnotationPage",
           "items": [
             {
-              "id": "https://iiif.arcipelago-ceresa.digitaleditions.ch/annotation/p0096-image",
+              "id": "https://iiif.arcipelago-ceresa.digitaleditions.ch/presentation/annotation/p0096-image",
               "type": "Annotation",
               "motivation": "painting",
               "body": {
@@ -3749,14 +3749,14 @@
                   }
                 ]
               },
-              "target": "https://iiif.arcipelago-ceresa.digitaleditions.ch/canvas/p96"
+              "target": "https://iiif.arcipelago-ceresa.digitaleditions.ch/presentation/canvas/p96"
             }
           ]
         }
       ]
     },
     {
-      "id": "https://iiif.arcipelago-ceresa.digitaleditions.ch/canvas/p97",
+      "id": "https://iiif.arcipelago-ceresa.digitaleditions.ch/presentation/canvas/p97",
       "type": "Canvas",
       "label": {
         "en": [
@@ -3767,11 +3767,11 @@
       "width": 9436,
       "items": [
         {
-          "id": "https://iiif.arcipelago-ceresa.digitaleditions.ch/page/p97/1",
+          "id": "https://iiif.arcipelago-ceresa.digitaleditions.ch/presentation/page/p97/1",
           "type": "AnnotationPage",
           "items": [
             {
-              "id": "https://iiif.arcipelago-ceresa.digitaleditions.ch/annotation/p0097-image",
+              "id": "https://iiif.arcipelago-ceresa.digitaleditions.ch/presentation/annotation/p0097-image",
               "type": "Annotation",
               "motivation": "painting",
               "body": {
@@ -3788,14 +3788,14 @@
                   }
                 ]
               },
-              "target": "https://iiif.arcipelago-ceresa.digitaleditions.ch/canvas/p97"
+              "target": "https://iiif.arcipelago-ceresa.digitaleditions.ch/presentation/canvas/p97"
             }
           ]
         }
       ]
     },
     {
-      "id": "https://iiif.arcipelago-ceresa.digitaleditions.ch/canvas/p98",
+      "id": "https://iiif.arcipelago-ceresa.digitaleditions.ch/presentation/canvas/p98",
       "type": "Canvas",
       "label": {
         "en": [
@@ -3806,11 +3806,11 @@
       "width": 9436,
       "items": [
         {
-          "id": "https://iiif.arcipelago-ceresa.digitaleditions.ch/page/p98/1",
+          "id": "https://iiif.arcipelago-ceresa.digitaleditions.ch/presentation/page/p98/1",
           "type": "AnnotationPage",
           "items": [
             {
-              "id": "https://iiif.arcipelago-ceresa.digitaleditions.ch/annotation/p0098-image",
+              "id": "https://iiif.arcipelago-ceresa.digitaleditions.ch/presentation/annotation/p0098-image",
               "type": "Annotation",
               "motivation": "painting",
               "body": {
@@ -3827,14 +3827,14 @@
                   }
                 ]
               },
-              "target": "https://iiif.arcipelago-ceresa.digitaleditions.ch/canvas/p98"
+              "target": "https://iiif.arcipelago-ceresa.digitaleditions.ch/presentation/canvas/p98"
             }
           ]
         }
       ]
     },
     {
-      "id": "https://iiif.arcipelago-ceresa.digitaleditions.ch/canvas/p99",
+      "id": "https://iiif.arcipelago-ceresa.digitaleditions.ch/presentation/canvas/p99",
       "type": "Canvas",
       "label": {
         "en": [
@@ -3845,11 +3845,11 @@
       "width": 9436,
       "items": [
         {
-          "id": "https://iiif.arcipelago-ceresa.digitaleditions.ch/page/p99/1",
+          "id": "https://iiif.arcipelago-ceresa.digitaleditions.ch/presentation/page/p99/1",
           "type": "AnnotationPage",
           "items": [
             {
-              "id": "https://iiif.arcipelago-ceresa.digitaleditions.ch/annotation/p0099-image",
+              "id": "https://iiif.arcipelago-ceresa.digitaleditions.ch/presentation/annotation/p0099-image",
               "type": "Annotation",
               "motivation": "painting",
               "body": {
@@ -3866,14 +3866,14 @@
                   }
                 ]
               },
-              "target": "https://iiif.arcipelago-ceresa.digitaleditions.ch/canvas/p99"
+              "target": "https://iiif.arcipelago-ceresa.digitaleditions.ch/presentation/canvas/p99"
             }
           ]
         }
       ]
     },
     {
-      "id": "https://iiif.arcipelago-ceresa.digitaleditions.ch/canvas/p100",
+      "id": "https://iiif.arcipelago-ceresa.digitaleditions.ch/presentation/canvas/p100",
       "type": "Canvas",
       "label": {
         "en": [
@@ -3884,11 +3884,11 @@
       "width": 9436,
       "items": [
         {
-          "id": "https://iiif.arcipelago-ceresa.digitaleditions.ch/page/p100/1",
+          "id": "https://iiif.arcipelago-ceresa.digitaleditions.ch/presentation/page/p100/1",
           "type": "AnnotationPage",
           "items": [
             {
-              "id": "https://iiif.arcipelago-ceresa.digitaleditions.ch/annotation/p0100-image",
+              "id": "https://iiif.arcipelago-ceresa.digitaleditions.ch/presentation/annotation/p0100-image",
               "type": "Annotation",
               "motivation": "painting",
               "body": {
@@ -3905,14 +3905,14 @@
                   }
                 ]
               },
-              "target": "https://iiif.arcipelago-ceresa.digitaleditions.ch/canvas/p100"
+              "target": "https://iiif.arcipelago-ceresa.digitaleditions.ch/presentation/canvas/p100"
             }
           ]
         }
       ]
     },
     {
-      "id": "https://iiif.arcipelago-ceresa.digitaleditions.ch/canvas/p101",
+      "id": "https://iiif.arcipelago-ceresa.digitaleditions.ch/presentation/canvas/p101",
       "type": "Canvas",
       "label": {
         "en": [
@@ -3923,11 +3923,11 @@
       "width": 9436,
       "items": [
         {
-          "id": "https://iiif.arcipelago-ceresa.digitaleditions.ch/page/p101/1",
+          "id": "https://iiif.arcipelago-ceresa.digitaleditions.ch/presentation/page/p101/1",
           "type": "AnnotationPage",
           "items": [
             {
-              "id": "https://iiif.arcipelago-ceresa.digitaleditions.ch/annotation/p0101-image",
+              "id": "https://iiif.arcipelago-ceresa.digitaleditions.ch/presentation/annotation/p0101-image",
               "type": "Annotation",
               "motivation": "painting",
               "body": {
@@ -3944,7 +3944,7 @@
                   }
                 ]
               },
-              "target": "https://iiif.arcipelago-ceresa.digitaleditions.ch/canvas/p101"
+              "target": "https://iiif.arcipelago-ceresa.digitaleditions.ch/presentation/canvas/p101"
             }
           ]
         }

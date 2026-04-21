@@ -1,6 +1,6 @@
 {
   "@context": "http://iiif.io/api/presentation/3/context.json",
-  "id": "https://iiif.arcipelago-ceresa.digitaleditions.ch/A-5-a_13.json",
+  "id": "https://iiif.arcipelago-ceresa.digitaleditions.ch/presentation/A-5-a_13.json",
   "type": "Manifest",
   "label": {
     "en": [
@@ -12,7 +12,7 @@
   ],
   "items": [
     {
-      "id": "https://iiif.arcipelago-ceresa.digitaleditions.ch/canvas/p1",
+      "id": "https://iiif.arcipelago-ceresa.digitaleditions.ch/presentation/canvas/p1",
       "type": "Canvas",
       "label": {
         "en": [
@@ -23,11 +23,11 @@
       "width": 6666,
       "items": [
         {
-          "id": "https://iiif.arcipelago-ceresa.digitaleditions.ch/page/p1/1",
+          "id": "https://iiif.arcipelago-ceresa.digitaleditions.ch/presentation/page/p1/1",
           "type": "AnnotationPage",
           "items": [
             {
-              "id": "https://iiif.arcipelago-ceresa.digitaleditions.ch/annotation/p0001-image",
+              "id": "https://iiif.arcipelago-ceresa.digitaleditions.ch/presentation/annotation/p0001-image",
               "type": "Annotation",
               "motivation": "painting",
               "body": {
@@ -44,7 +44,7 @@
                   }
                 ]
               },
-              "target": "https://iiif.arcipelago-ceresa.digitaleditions.ch/canvas/p1"
+              "target": "https://iiif.arcipelago-ceresa.digitaleditions.ch/presentation/canvas/p1"
             }
           ]
         }
