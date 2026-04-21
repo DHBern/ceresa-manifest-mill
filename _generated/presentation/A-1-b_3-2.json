@@ -33,7 +33,7 @@
               "body": {
                 "id": "https://iiif.ub.unibe.ch/image/v3/ceresa/A-1-b_3-2_001.tif",
                 "type": "Image",
-                "format": "image/tiff",
+                "format": "image/jpeg",
                 "height": 6277,
                 "width": 9416,
                 "service": [
@@ -72,7 +72,7 @@
               "body": {
                 "id": "https://iiif.ub.unibe.ch/image/v3/ceresa/A-1-b_3-2_002.tif",
                 "type": "Image",
-                "format": "image/tiff",
+                "format": "image/jpeg",
                 "height": 6277,
                 "width": 9416,
                 "service": [
@@ -111,7 +111,7 @@
               "body": {
                 "id": "https://iiif.ub.unibe.ch/image/v3/ceresa/A-1-b_3-2_003.tif",
                 "type": "Image",
-                "format": "image/tiff",
+                "format": "image/jpeg",
                 "height": 6277,
                 "width": 9416,
                 "service": [
@@ -150,7 +150,7 @@
               "body": {
                 "id": "https://iiif.ub.unibe.ch/image/v3/ceresa/A-1-b_3-2_004.tif",
                 "type": "Image",
-                "format": "image/tiff",
+                "format": "image/jpeg",
                 "height": 6277,
                 "width": 9416,
                 "service": [
@@ -189,7 +189,7 @@
               "body": {
                 "id": "https://iiif.ub.unibe.ch/image/v3/ceresa/A-1-b_3-2_005.tif",
                 "type": "Image",
-                "format": "image/tiff",
+                "format": "image/jpeg",
                 "height": 6277,
                 "width": 9416,
                 "service": [
@@ -228,7 +228,7 @@
               "body": {
                 "id": "https://iiif.ub.unibe.ch/image/v3/ceresa/A-1-b_3-2_006.tif",
                 "type": "Image",
-                "format": "image/tiff",
+                "format": "image/jpeg",
                 "height": 6277,
                 "width": 9416,
                 "service": [
@@ -267,7 +267,7 @@
               "body": {
                 "id": "https://iiif.ub.unibe.ch/image/v3/ceresa/A-1-b_3-2_007.tif",
                 "type": "Image",
-                "format": "image/tiff",
+                "format": "image/jpeg",
                 "height": 6277,
                 "width": 9416,
                 "service": [
@@ -306,7 +306,7 @@
               "body": {
                 "id": "https://iiif.ub.unibe.ch/image/v3/ceresa/A-1-b_3-2_008.tif",
                 "type": "Image",
-                "format": "image/tiff",
+                "format": "image/jpeg",
                 "height": 6277,
                 "width": 9416,
                 "service": [
@@ -345,7 +345,7 @@
               "body": {
                 "id": "https://iiif.ub.unibe.ch/image/v3/ceresa/A-1-b_3-2_009.tif",
                 "type": "Image",
-                "format": "image/tiff",
+                "format": "image/jpeg",
                 "height": 6277,
                 "width": 9416,
                 "service": [

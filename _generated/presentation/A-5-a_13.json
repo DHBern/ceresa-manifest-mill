@@ -33,7 +33,7 @@
               "body": {
                 "id": "https://iiif.ub.unibe.ch/image/v3/ceresa/A-5-a_13_001.tif",
                 "type": "Image",
-                "format": "image/tiff",
+                "format": "image/jpeg",
                 "height": 10000,
                 "width": 6666,
                 "service": [
