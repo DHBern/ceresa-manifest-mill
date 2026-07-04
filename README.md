@@ -207,6 +207,22 @@ The workflow will:
 - Download all referenced images
 - Upload as documents to the selected Transkribus collection
 
+<details><summary>Generating a list of all presentation manifests based on a BagIt manifest</summary>
+
+An easy way to do this is prepending the name of the folder that contains the images with the API path:
+
+```bash
+awk '
+{
+    split($2, p, "/")
+    print "https://iiif.arcipelago-ceresa.digitaleditions.ch/presentation/" p[length(p)-1] ".json"
+}
+' input.txt | sort -u
+```
+(Modify `input.txt` to match the name of the input manifest.)
+
+</details>
+
 #### Review results
 
 - Check the issue reply for upload report with status for each manifest
