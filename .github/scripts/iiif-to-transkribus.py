@@ -97,22 +97,37 @@ def extract_pages(manifest):
 def download_images(pages, wait=1):
     """Download images for all pages."""
     images = {}
+
+    session = requests.Session()
+    session.headers.update({
+        "User-Agent": "DSL-Image-Query/1.0",
+        "Accept": "image/jpeg",
+    })
+
     for idx, (label, service_id) in enumerate(sorted(pages.items()), 1):
         try:
             # Remove /info.json if present and construct full image URL
             base_url = service_id.rstrip('/').removesuffix('/info.json')
             image_url = f"{base_url}/full/max/0/default.jpg"
-            
-            r = requests.get(image_url, timeout=60, stream=True)
+
+            r = session.get(
+                image_url,
+                timeout=60,
+                stream=True
+            )
             r.raise_for_status()
-            
+
             filename = f"{label}.jpg"
             images[filename] = r.content
+
             logging.info(f"Downloaded {filename} ({len(r.content)} bytes)")
             time.sleep(wait)
-        except Exception as e:
+
+        except requests.exceptions.RequestException as e:
             logging.error(f"Failed to download {label}: {e}")
             continue
+
+    session.close()
     return images
 
 def upload_file(upload_id, filename, file_data):
